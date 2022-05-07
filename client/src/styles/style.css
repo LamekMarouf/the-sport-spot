@@ -1,0 +1,9 @@
+#navbar .navbar-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .navbar-links ul li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
