@@ -27,7 +27,7 @@ body {
   padding: 10px;
 }
 
-.navbar-top .hamburger {
+.navbar-top #hamburger {
   font-size: 60px;
   color: #e4e4e4;
   margin: 5px;
@@ -45,7 +45,7 @@ body {
           justify-content: center;
 }
 
-.navbar-top .hamburger:hover {
+.navbar-top #hamburger:hover {
   cursor: pointer;
   background-color: #e4e4e4;
   color: #d03030;
@@ -53,7 +53,7 @@ body {
   transition: .2s ease-in-out;
 }
 
-.navbar-side ul {
+#navbar-side ul {
   font-size: 20px;
   padding: 0;
   margin: 0;
@@ -63,7 +63,7 @@ body {
   border-bottom: 2px solid #ffd9d9;
 }
 
-.navbar-side ul li {
+#navbar-side ul li {
   list-style: none;
   padding: 20px;
   background-color: #d03030;
@@ -74,11 +74,11 @@ body {
   transition: .2s ease-in-out;
 }
 
-.navbar-side ul li .navbar-icons {
+#navbar-side ul li .navbar-icons {
   margin-right: 10px;
 }
 
-.navbar-side ul li:hover {
+#navbar-side ul li:hover {
   background-color: #e4e4e4;
   color: #d03030;
   -webkit-transition: .2s ease-in-out;

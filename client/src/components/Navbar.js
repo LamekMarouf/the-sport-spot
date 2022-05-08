@@ -5,16 +5,22 @@ import { BsCreditCard2Front } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
+
+  const displayMenu = () => {
+    const navbarSide = document.getElementById('navbar-side');
+    navbarSide.classList.toggle('hidden')
+  }
+
   return (
     <>
       <section className="navbar-top">
-        <div className="hamburger">
+        <button id="hamburger" onClick={displayMenu}>
           <BiMenuAltLeft />
-        </div>
+        </button>
         <div className="logo">The Sport Spot</div>
       </section>
 
-      <section className="navbar-side">
+      <section id="navbar-side">
         <ul>
           <li>
             <div className="navbar-icons">

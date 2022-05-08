@@ -33,7 +33,7 @@ body {
         border-left: $titleColor 3px solid;
         padding: 10px;
     }
-    .hamburger {
+    #hamburger {
         font-size: 60px;
         color: $titleColor;
         margin: 5px;
@@ -51,7 +51,7 @@ body {
     }
 }
 
-.navbar-side {
+#navbar-side {
     // display: none;
     ul {
         font-size: 20px;
