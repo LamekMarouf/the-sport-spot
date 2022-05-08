@@ -1,7 +1,13 @@
-$backgroundMain: #D74141;
-$outline: #c7b3b3;
+$navbar: #d03030;
+$outline: #ffd9d9;
 $titleColor: #e4e4e4;
+$backgroundMain: #ff5656;
 
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 // When you finish making the navbar, make it a seperate file.
 
 body {
@@ -13,39 +19,67 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
     text-decoration: none;
+    background-color: $backgroundMain;
 }
 
 .navbar-top {
     display: flex;
-    background-color: $backgroundMain;
+    background-color: $navbar;
+    border-bottom: 2px solid $outline;
     .logo {
         font-size: 40px;
         color: $titleColor;
         font-weight: 700;
-        border-right: $titleColor 3px solid;
+        border-left: $titleColor 3px solid;
         padding: 10px;
     }
     .hamburger {
         font-size: 60px;
         color: $titleColor;
-        padding-left: 10px;
+        margin: 5px;
         transition: .2s ease-in-out;
+        border-radius: 10px;
+
+        @include flexCenter();
+
         &:hover {
             cursor: pointer;
             background-color: $titleColor;
-            color: $backgroundMain;
+            color: $navbar;
             transition: .2s ease-in-out;
         }
     }
 }
 
 .navbar-side {
+    // display: none;
     ul {
         font-size: 20px;
         padding: 0;
+        margin: 0;
+        color: $titleColor;
+        width: 200px;
+        border-right: 2px solid $outline;
+        border-bottom: 2px solid $outline;
         li {
             list-style: none;
-            padding: 20px 2px 2px 2px;
+            padding: 20px;
+            background-color: $navbar;
+            display: flex;
+            transition: .2s ease-in-out;
+            .navbar-icons {
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: $titleColor;
+                color: $navbar;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+            }
         }
     }
+}
+
+.hidden {
+    display: none;
 }

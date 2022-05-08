@@ -8,28 +8,36 @@ function Navbar() {
   return (
     <>
       <section className="navbar-top">
-        <div className="logo">The Sport Spot</div>
         <div className="hamburger">
           <BiMenuAltLeft />
         </div>
+        <div className="logo">The Sport Spot</div>
       </section>
 
       <section className="navbar-side">
         <ul>
           <li>
-            <RiHome4Line />
-            Home
+            <div className="navbar-icons">
+              <RiHome4Line />
+            </div>
+            <div className="navbar-text">Home</div>
           </li>
           <li>
-            <BiCategoryAlt />
+            <div className="navbar-icons">
+              <BiCategoryAlt />
+            </div>
             Categories
           </li>
           <li>
-            <BsCreditCard2Front />
+            <div className="navbar-icons">
+              <BsCreditCard2Front />
+            </div>
             Subscription
           </li>
           <li>
-            <CgProfile />
+            <div className="navbar-icons">
+              <CgProfile />
+            </div>
             Log In
           </li>
         </ul>
