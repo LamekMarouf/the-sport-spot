@@ -1,4 +1,6 @@
 $backgroundMain: #D74141;
+$outline: #c7b3b3;
+$titleColor: #e4e4e4;
 
 // When you finish making the navbar, make it a seperate file.
 
@@ -8,5 +10,42 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
+.navbar-top {
+    display: flex;
+    background-color: $backgroundMain;
+    .logo {
+        font-size: 40px;
+        color: $titleColor;
+        font-weight: 700;
+        border-right: $titleColor 3px solid;
+        padding: 10px;
+    }
+    .hamburger {
+        font-size: 60px;
+        color: $titleColor;
+        padding-left: 10px;
+        transition: .2s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background-color: $titleColor;
+            color: $backgroundMain;
+            transition: .2s ease-in-out;
+        }
+    }
+}
+
+.navbar-side {
+    ul {
+        font-size: 20px;
+        padding: 0;
+        li {
+            list-style: none;
+            padding: 20px 2px 2px 2px;
+        }
+    }
+}
