@@ -20,7 +20,7 @@ function Navbar() {
         <div className="logo">The Sport Spot</div>
       </section>
 
-      <section id="navbar-side">
+      <section id="navbar-side" className="hidden">
         <ul>
           <li>
             <div className="navbar-icons">

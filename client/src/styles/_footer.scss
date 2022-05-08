@@ -1,0 +1,22 @@
+$navbar: #d03030;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #ff5656;
+$footerMain: #272727;
+$footerText: #ebebeb;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: $footerMain;
+    color: $footerText;
+    padding: 20px;
+    font-size: 20px;
+    border-top: solid 2px $footerText;
+
+    @include flexCenter();
+}
