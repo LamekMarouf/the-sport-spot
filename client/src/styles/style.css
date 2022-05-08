@@ -34,6 +34,8 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-radius: 10px;
+  background-color: #d03030;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
