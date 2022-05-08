@@ -8,14 +8,14 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   list-style: none;
   text-decoration: none;
-  background-color: #ff5656;
+  background-color: #cf2e2e;
 }
 
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #d03030;
+  background-color: #810404;
   border-bottom: 2px solid #ffd9d9;
 }
 
@@ -34,7 +34,7 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-radius: 10px;
-  background-color: #d03030;
+  background-color: #810404;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,9 +50,14 @@ body {
 .navbar-top #hamburger:hover {
   cursor: pointer;
   background-color: #e4e4e4;
-  color: #d03030;
+  color: #810404;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+}
+
+#navbar-side {
+  z-index: 20;
+  position: absolute;
 }
 
 #navbar-side ul {
@@ -68,7 +73,7 @@ body {
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #d03030;
+  background-color: #810404;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +87,7 @@ body {
 
 #navbar-side ul li:hover {
   background-color: #e4e4e4;
-  color: #d03030;
+  color: #810404;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -107,5 +112,55 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.homepage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.homepage .pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  background-color: #810404;
+  margin: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid #ffd9d9;
+}
+
+.homepage .pictures:hover {
+  cursor: pointer;
+}
+
+.homepage .pictures:hover .text {
+  text-decoration: underline;
+}
+
+.homepage .text {
+  font-size: 48px;
+  color: #e4e4e4;
+}
+
+.homepage .logo {
+  height: 200px;
+}
+
+.homepage #esports-logo {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */

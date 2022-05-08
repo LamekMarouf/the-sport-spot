@@ -1,7 +1,7 @@
-$navbar: #d03030;
+$navbar: #810404;
 $outline: #ffd9d9;
 $titleColor: #e4e4e4;
-$backgroundMain: #ff5656;
+$backgroundMain: #cf2e2e;
 
 @mixin flexCenter {
     display: flex;
@@ -53,7 +53,8 @@ body {
 }
 
 #navbar-side {
-    // display: none;
+    z-index: 20;
+    position: absolute;
     ul {
         font-size: 20px;
         padding: 0;

@@ -1,0 +1,40 @@
+$navbar: #810404;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #cf2e2e;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    .pictures {
+        @include flexCenter();
+        height: 300px;
+        background-color: $navbar;
+        margin: 30px;
+        flex-direction: column;
+        border: 3px solid $outline;
+        &:hover {
+            cursor: pointer;
+            .text {
+                text-decoration: underline;
+            }
+        }
+    }
+    .text {
+        font-size: 48px;
+        color: $titleColor;
+    }
+    .logo {
+        height: 200px;
+    }
+    #esports-logo {
+        border-radius: 20px;
+    }
+}
