@@ -1,0 +1,118 @@
+$navbar: #810404;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #cf2e2e;
+$textColor: #000000;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.premiereleague-page {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    padding: 5%;
+    .title {
+        color: $titleColor;
+        font-size: 72px;
+        padding: 0;
+        margin: 0;
+
+        @include flexCenter();
+    }
+    .trending {
+        display: grid;
+        grid-template-rows: 1fr 12fr;
+        .trending-title {
+            font-size: 40px;
+            color: $titleColor;
+            padding-left: 20PX;
+        }
+        .trending-cards {
+            display: grid;
+            grid-template-columns: repeat(100, 1fr);
+            .card{
+                width: 400px;
+                border: 2px solid $outline;
+                background-color: $navbar;
+                margin: 20px; 
+                .card-picture {
+                    width: 400px;
+                    height: 200px;
+    
+                    @include flexCenter();
+                }
+                .card-title {
+                    font-size: 30px;
+                    color: $titleColor;
+                    padding: 2px;
+                    border-top: solid 2px $outline;
+                }
+                .card-time {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $titleColor;
+                    margin: 0px 2px 2px 2px;
+                    padding-left: 2px;
+                }
+                .card-description {
+                    color: $titleColor;
+                    margin: 8px 2px 2px 2px;
+                    padding: 2px;
+                    height: 250px;
+                }
+      
+            }
+        }
+    }
+    .all {
+        display: grid;
+        grid-template-rows: 1fr 12fr;
+        margin-top: 40px;
+        .all-title {
+            font-size: 40px;
+            color: $titleColor;
+            padding-left: 20PX;
+        }
+        .all-cards {
+            display: grid;
+            grid-template-columns: repeat(100, 1fr);
+            .card{
+                width: 400px;
+                border: 2px solid $outline;
+                background-color: $navbar;
+                margin: 20px; 
+                .card-picture {
+                    width: 400px;
+                    height: 200px;
+    
+                    @include flexCenter();
+                }
+                .card-title {
+                    font-size: 30px;
+                    color: $titleColor;
+                    padding: 2px;
+                    border-top: solid 2px $outline;
+                }
+                .card-time {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $titleColor;
+                    margin: 0px 2px 2px 2px;
+                    padding-left: 2px;
+                }
+                .card-description {
+                    color: $titleColor;
+                    margin: 8px 2px 2px 2px;
+                    padding: 2px;
+                    height: 250px;
+                }
+      
+            }
+        }
+    }
+
+}
