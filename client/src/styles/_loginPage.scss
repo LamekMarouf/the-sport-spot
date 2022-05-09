@@ -1,0 +1,33 @@
+$navbar: #e13939;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #810404;
+$titleColor: #230000;
+
+// Change font of title to a more special one
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page {
+    @include flexCenter();
+    flex-direction: column;
+
+    .main-title {
+        font-size: 108px;
+        color: $titleColor;
+    }
+    .signup-box {
+        @include flexCenter();
+        flex-direction: column;
+
+        width: 500px;
+        height: 500px;
+        border: 2px solid $outline;
+        border-radius: 10px;
+        background-color: $navbar;
+    }
+}

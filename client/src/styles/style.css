@@ -8,14 +8,14 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   list-style: none;
   text-decoration: none;
-  background-color: #e13939;
+  background-color: #810404;
 }
 
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #810404;
+  background-color: #e13939;
   border-bottom: 2px solid #ffd9d9;
 }
 
@@ -34,7 +34,7 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-radius: 10px;
-  background-color: #810404;
+  background-color: #e13939;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@ body {
 .navbar-top #hamburger:hover {
   cursor: pointer;
   background-color: #e4e4e4;
-  color: #810404;
+  color: #e13939;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -73,7 +73,7 @@ body {
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #810404;
+  background-color: #e13939;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +87,7 @@ body {
 
 #navbar-side ul li:hover {
   background-color: #e4e4e4;
-  color: #810404;
+  color: #e13939;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -134,7 +134,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
-  background-color: #810404;
+  background-color: #e13939;
   margin: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -202,8 +202,8 @@ body {
 }
 
 .football-page .pictures {
-  background-color: #810404;
-  border: 4px solid #810404;
+  background-color: #e13939;
+  border: 4px solid #e13939;
   width: 500px;
   margin: 10px;
   background-color: white;
@@ -304,7 +304,7 @@ body {
 .premiereleague-page .trending .trending-cards .card {
   width: 400px;
   border: 2px solid #ffd9d9;
-  background-color: #810404;
+  background-color: #e13939;
   margin: 20px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -314,7 +314,7 @@ body {
   cursor: pointer;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  background-color: #be0000;
+  background-color: #ae0e00;
 }
 
 .premiereleague-page .trending .trending-cards .card .card-picture {
@@ -378,7 +378,7 @@ body {
 .premiereleague-page .all .all-cards .card {
   width: 400px;
   border: 2px solid #ffd9d9;
-  background-color: #810404;
+  background-color: #e13939;
   margin: 20px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -386,7 +386,7 @@ body {
 
 .premiereleague-page .all .all-cards .card:hover {
   cursor: pointer;
-  background-color: #be0000;
+  background-color: #ae0e00;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -426,5 +426,47 @@ body {
   margin: 8px 2px 2px 2px;
   padding: 2px;
   height: 250px;
+}
+
+.login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-page .main-title {
+  font-size: 108px;
+  color: #230000;
+}
+
+.login-page .signup-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #ffd9d9;
+  border-radius: 10px;
+  background-color: #e13939;
 }
 /*# sourceMappingURL=style.css.map */
