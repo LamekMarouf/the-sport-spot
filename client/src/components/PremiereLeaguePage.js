@@ -12,7 +12,7 @@ function PremiereLeaguePage() {
           <div className="trending-title">Trending</div>
           <div className="trending-cards">
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
@@ -31,7 +31,7 @@ function PremiereLeaguePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
@@ -50,7 +50,7 @@ function PremiereLeaguePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
@@ -74,7 +74,7 @@ function PremiereLeaguePage() {
           <div className="all-title">All</div>
           <div className="all-cards">
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
@@ -93,7 +93,7 @@ function PremiereLeaguePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
@@ -112,7 +112,7 @@ function PremiereLeaguePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-picture">Insert Picture</div>
+              <div className="card-picture"></div>
               <div className="card-title">Title</div>
               <div className="card-time">2 hours ago</div>
               <div className="card-description">
