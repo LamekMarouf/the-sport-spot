@@ -1,0 +1,69 @@
+$navbar: #810404;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #cf2e2e;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.football-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 200px;
+    .left-column {
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+    }
+    .right-column {
+        display: grid;
+        grid-template-rows: 3fr 3fr 3fr 1fr;
+    }
+    .title{
+        color: white;
+        font-size: 108px;
+        padding: 20px;
+
+        @include flexCenter();
+    }
+    .pictures {
+        background-color: $navbar;
+        border: 4px solid $navbar;
+        width: 500px;
+        margin: 10px;
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+        }
+        #premiereleague-logo {
+            width: 100%;
+        }
+        #laliga-logo {
+            width: 50%;
+        }
+        #bundesliga-logo {
+            width: 90%;
+        }
+        #ligueone-logo {
+            width: 40%;
+        }
+        #seriea-logo {
+            width: 100%;
+        }
+        #mls-logo {
+            width: 50%;
+        }
+
+        @include flexCenter();
+        flex-direction: column;
+
+        .text {
+            color: black;
+        }
+
+        @include flexCenter();
+    }
+}

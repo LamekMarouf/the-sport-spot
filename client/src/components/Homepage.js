@@ -5,6 +5,7 @@ import mlbLogo from "../assets/images/mlb-logo.png";
 import nbaLogo from "../assets/images/nba-logo.png";
 import nflLogo from "../assets/images/nfl-logo.png";
 import esportsLogo from "../assets/images/esports-logo.jpg";
+import soccerLogo from "../assets/images/soccer-logo.png"
 
 function Homepage() {
   return (
@@ -21,8 +22,8 @@ function Homepage() {
           <div className="text">NBA</div>
         </div>
         <div className="pictures">
-          <img src={nflLogo} alt="NFL Logo" className="logo"></img>
-          <div className="text">NFL</div>
+          <img src={soccerLogo} alt="Soccer Logo" className="logo"></img>
+          <div className="text">Football</div>
         </div>
         <div className="pictures">
           <img
@@ -33,7 +34,10 @@ function Homepage() {
           ></img>
           <div className="text">Esports</div>
         </div>
-        <div className="pictures">Hello</div>
+        <div className="pictures">
+          <img src={nflLogo} alt="NFL Logo" className="logo"></img>
+          <div className="text">NFL</div>
+        </div>
         <div className="pictures">Hello</div>
         <div className="pictures">Hello</div>
         <div className="pictures">Hello</div>
