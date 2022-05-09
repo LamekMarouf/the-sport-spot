@@ -306,10 +306,15 @@ body {
   border: 2px solid #ffd9d9;
   background-color: #810404;
   margin: 20px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .premiereleague-page .trending .trending-cards .card:hover {
   cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  background-color: #be0000;
 }
 
 .premiereleague-page .trending .trending-cards .card .card-picture {
@@ -374,10 +379,15 @@ body {
   border: 2px solid #ffd9d9;
   background-color: #810404;
   margin: 20px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .premiereleague-page .all .all-cards .card:hover {
   cursor: pointer;
+  background-color: #be0000;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .premiereleague-page .all .all-cards .card .card-picture {

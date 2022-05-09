@@ -3,6 +3,7 @@ $outline: #ffd9d9;
 $titleColor: #e4e4e4;
 $backgroundMain: #cf2e2e;
 $textColor: #000000;
+$hoverColor: #be0000;
 
 @mixin flexCenter {
     display: flex;
@@ -39,8 +40,11 @@ $textColor: #000000;
                 border: 2px solid $outline;
                 background-color: $navbar;
                 margin: 20px;
+                transition: .2s ease-in-out;
                 &:hover {
                     cursor: pointer;
+                    transition: .2s ease-in-out;
+                    background-color: $hoverColor;
                 }
                 .card-picture {
                     width: 400px;
@@ -88,8 +92,11 @@ $textColor: #000000;
                 border: 2px solid $outline;
                 background-color: $navbar;
                 margin: 20px;
+                transition: .2s ease-in-out;
                 &:hover {
                     cursor: pointer;
+                    background-color: $hoverColor;
+                    transition: .2s ease-in-out;
                 }
                 .card-picture {
                     width: 400px;
