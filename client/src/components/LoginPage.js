@@ -31,12 +31,49 @@ function LoginPage() {
                     placeholder="Last Name"
                   />
                 </div>
-
               </div>
-              <div className="email"></div>
-              <div className="password"></div>
-              <div className="phone-and-postcode"></div>
-              <div className="street-address"></div>
+              <div className="email">
+                <input
+                  className="email-text"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="password">
+                <input
+                  className="password-text"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div className="phone-and-postcode">
+                <div className="phone-box">
+                  <input
+                    className="phone-text"
+                    type="text"
+                    name="phone"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div className="postcode-box">
+                  <input
+                    className="postcode-text"
+                    type="text"
+                    name="postcode"
+                    placeholder="Postcode"
+                  />
+                </div>
+              </div>
+              <div className="street-address">
+                <input
+                  className="street-address-text"
+                  type="text"
+                  name="street-address"
+                  placeholder="Street Address"
+                />
+              </div>
             </form>
           </div>
           <button className="signup-button">Signup</button>
