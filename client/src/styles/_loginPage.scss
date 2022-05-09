@@ -3,6 +3,7 @@ $outline: #ffd9d9;
 $titleColor: #e4e4e4;
 $backgroundMain: #810404;
 $titleColor: #230000;
+$loginSignup: #D89D9D;
 
 // Change font of title to a more special one
 
@@ -28,6 +29,108 @@ $titleColor: #230000;
         height: 500px;
         border: 2px solid $outline;
         border-radius: 10px;
-        background-color: $navbar;
+        background-color: #863737;
+    }
+    .signup-option {
+        @include flexCenter();
+        color: $loginSignup;
+        font-size: 36px;
+        p {
+            margin: 15px;
+        }
+    }
+    .signup-information {
+        padding: 5px;
+        .signup-form {
+            .first-and-last-name {
+                display: flex;
+                .firstname-text {
+                    width: 167px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                ::placeholder {
+                    color: $outline;
+                }
+                .lastname-text {
+                    width: 170px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+            }
+            .email{
+                .email-text {
+                    width: 350px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                ::placeholder {
+                    color: $outline;
+                }
+            }
+            .password {
+                .password-text {
+                    width: 350px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                ::placeholder {
+                    color: $outline;
+                }
+            }
+            .phone-and-postcode {
+                display: flex;
+                .phone-text {
+                    width: 196px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                .postcode-text {
+                    width: 140px;
+                    border-radius: 20px;
+                    margin: 3px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                ::placeholder {
+                    color: $outline;
+                }
+            }
+            .street-address {
+                .street-address-text {
+                    width: 350px;
+                    border-radius: 20px;
+                    height: 25px;
+                    border: 2px solid $outline;
+                    background-color: $loginSignup;
+                    color: $outline;
+                }
+                ::placeholder {
+                    color: $outline;
+                }
+            }
+        }
     }
 }
