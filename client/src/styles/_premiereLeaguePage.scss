@@ -29,7 +29,7 @@ $textColor: #000000;
         .trending-title {
             font-size: 40px;
             color: $titleColor;
-            padding-left: 20PX;
+            padding-left: 20px;
         }
         .trending-cards {
             display: grid;
@@ -38,7 +38,10 @@ $textColor: #000000;
                 width: 400px;
                 border: 2px solid $outline;
                 background-color: $navbar;
-                margin: 20px; 
+                margin: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
                 .card-picture {
                     width: 400px;
                     height: 200px;
@@ -75,7 +78,7 @@ $textColor: #000000;
         .all-title {
             font-size: 40px;
             color: $titleColor;
-            padding-left: 20PX;
+            padding-left: 20px;
         }
         .all-cards {
             display: grid;
@@ -84,7 +87,10 @@ $textColor: #000000;
                 width: 400px;
                 border: 2px solid $outline;
                 background-color: $navbar;
-                margin: 20px; 
+                margin: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
                 .card-picture {
                     width: 400px;
                     height: 200px;
