@@ -8,8 +8,8 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   list-style: none;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#3c0303));
-  background-image: linear-gradient(#ae0909, #3c0303);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#650202));
+  background-image: linear-gradient(#ae0909, #650202);
 }
 
 .navbar-top {
@@ -688,5 +688,96 @@ body {
   color: #D89D9D;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+}
+
+.card-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.card-page .title {
+  font-size: 72px;
+  color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-page .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  width: 600px;
+  background-color: #cdcdcd;
+}
+
+.card-page .information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr;
+      grid-template-columns: 5fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  -ms-grid-rows: 1fr 10fr;
+      grid-template-rows: 1fr 10fr;
+}
+
+.card-page .information .information-title {
+  font-size: 36px;
+  color: #e4e4e4;
+}
+
+.card-page .information .results {
+  font-size: 36px;
+  color: #e4e4e4;
+}
+
+.card-page .information .description {
+  font-size: 16px;
+  color: #e4e4e4;
+  background-color: #570202;
+  padding: 20px;
+}
+
+.card-page .information .summary {
+  font-size: 16px;
+  color: #e4e4e4;
+  background-color: #570202;
+  padding: 10px;
+}
+
+.card-page .information .summary ul {
+  padding: 0;
+  margin: 0;
+}
+
+.card-page .information .summary ul li {
+  list-style: none;
+  margin: 0px  0px 40px 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ import Homepage from "./components/Homepage";
 import FootballPage from "./components/FootballPage";
 import PremiereLeaguePage from "./components/PremiereLeaguePage";
 import LoginPage from "./components/LoginPage";
+import CardPage from "./components/CardPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     {/* <Homepage /> */}
     {/* <FootballPage /> */}
     {/* <PremiereLeaguePage /> */}
-    <LoginPage />
+    {/* <LoginPage /> */}
+    <CardPage />
     </>
   )
 }

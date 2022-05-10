@@ -1,0 +1,62 @@
+$navbar: #B15D5D;
+$outline: #ffd9d9;
+$titleColor: #e4e4e4;
+$backgroundMain: #570202;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-page {
+    @include flexCenter();
+    flex-direction: column;
+    padding: 50px;
+    .title {
+        font-size: 72px;
+        color: $titleColor;
+
+        @include flexCenter();
+        }
+    .video {
+        @include flexCenter();
+        height: 300px;
+        width: 600px;
+        background-color: #cdcdcd;
+    }
+    .information {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        column-gap: 40px;
+        grid-template-rows: 1fr 10fr;
+        .information-title {
+            font-size: 36px;
+            color: $titleColor;
+        }
+        .results {
+            font-size: 36px;
+            color: $titleColor;
+        }
+        .description {
+            font-size: 16px;
+            color: $titleColor;
+            background-color: $backgroundMain;
+            padding: 20px;
+        }
+        .summary {
+            font-size: 16px;
+            color: $titleColor;
+            background-color: $backgroundMain;
+            padding: 10px;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    margin: 0px  0px 40px 0px;
+                }
+            }
+        }
+    }
+}
