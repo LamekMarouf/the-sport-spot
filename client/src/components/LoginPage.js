@@ -6,11 +6,11 @@ function LoginPage() {
   return (
     <>
       <section className="login-page">
-        <div className="main-title">Sport Spot</div>
+        <div className="main-title">SPORT SPOT</div>
         <div className="signup-box">
           <div className="signup-option">
-            <p>Login</p>
-            <p>Signup</p>
+            <p id="toggle-login">Login</p>
+            <p id="toggle-signup">Signup</p>
           </div>
           <div className="signup-information">
             <form className="signup-form">

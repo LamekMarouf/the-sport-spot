@@ -2,7 +2,7 @@ $navbar: #e13939;
 $outline: #ffd9d9;
 $titleColor: #e4e4e4;
 $backgroundMain: #810404;
-$titleColor: #230000;
+$titleColor: #050404;
 $loginSignup: #D89D9D;
 
 // Change font of title to a more special one
@@ -25,11 +25,12 @@ $loginSignup: #D89D9D;
         @include flexCenter();
         flex-direction: column;
 
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         border: 2px solid $outline;
         border-radius: 10px;
         background-color: #863737;
+        padding: 40px
     }
     .signup-option {
         @include flexCenter();
@@ -37,6 +38,17 @@ $loginSignup: #D89D9D;
         font-size: 36px;
         p {
             margin: 15px;
+        }
+        #toggle-signup {
+            background-color: $backgroundMain;
+            padding: 10px;
+            border-radius: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        #toggle-login {
+            cursor: pointer;
         }
     }
     .signup-information {
@@ -132,5 +144,21 @@ $loginSignup: #D89D9D;
                 }
             }
         }
-    }
+        }
+        .signup-button {
+            background-color: $loginSignup;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $outline;
+            transition: .1s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                background-color: $outline;
+                color: $loginSignup;
+                transition: .1s ease-in-out;
+            }
+        }
 }
