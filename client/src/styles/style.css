@@ -492,7 +492,7 @@ body {
 }
 
 .login-page .signup-option #toggle-signup {
-  background-color: linear-gradient(red, blue);
+  background-color: #570606;
   padding: 10px;
   border-radius: 10px;
 }
