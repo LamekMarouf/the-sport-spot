@@ -1,7 +1,7 @@
 $navbar: #B15D5D;
 $outline: #ffd9d9;
 $titleColor: #e4e4e4;
-$backgroundMain: #D14141;
+$backgroundMain: linear-gradient(rgb(174, 9, 9), rgb(60, 3, 3));
 
 @mixin flexCenter {
     display: flex;
@@ -18,7 +18,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
     text-decoration: none;
-    background-color: $backgroundMain;
+    background-image: $backgroundMain;
 }
 
 .navbar-top {

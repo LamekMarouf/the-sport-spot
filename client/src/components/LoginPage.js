@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 // Add gradient background
 
@@ -79,6 +80,8 @@ function LoginPage() {
           <button className="signup-button">Signup</button>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

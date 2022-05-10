@@ -8,7 +8,8 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   list-style: none;
   text-decoration: none;
-  background-color: #D14141;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#3c0303));
+  background-image: linear-gradient(#ae0909, #3c0303);
 }
 
 .navbar-top {
@@ -468,7 +469,8 @@ body {
   border: 2px solid #ffd9d9;
   border-radius: 10px;
   background-color: #863737;
-  padding: 40px;
+  padding: 0px 20px;
+  margin: 61px;
 }
 
 .login-page .signup-option {
@@ -490,7 +492,7 @@ body {
 }
 
 .login-page .signup-option #toggle-signup {
-  background-color: #810404;
+  background-color: linear-gradient(red, blue);
   padding: 10px;
   border-radius: 10px;
 }

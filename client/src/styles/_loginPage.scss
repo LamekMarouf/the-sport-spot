@@ -1,7 +1,7 @@
 $navbar: #e13939;
 $outline: #ffd9d9;
 $titleColor: #e4e4e4;
-$backgroundMain: #810404;
+$backgroundMain: linear-gradient(red, blue);
 $titleColor: #050404;
 $loginSignup: #D89D9D;
 
@@ -30,7 +30,8 @@ $loginSignup: #D89D9D;
         border: 2px solid $outline;
         border-radius: 10px;
         background-color: #863737;
-        padding: 40px
+        padding: 0px 20px;
+        margin: 61px
     }
     .signup-option {
         @include flexCenter();
