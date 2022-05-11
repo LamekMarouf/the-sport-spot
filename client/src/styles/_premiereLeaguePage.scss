@@ -46,6 +46,9 @@ $hoverColor: #ae0e00;
                     transition: .2s ease-in-out;
                     background-color: $hoverColor;
                 }
+                a {
+                    text-decoration: none;
+                }
                 .card-picture {
                     width: 400px;
                     height: 200px;

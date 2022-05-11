@@ -13,6 +13,9 @@ $backgroundMain: #D14141;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    a {
+        text-decoration: none;
+    }
     .pictures {
         @include flexCenter();
         height: 300px;

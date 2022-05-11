@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Outlet, Link } from "react-router-dom";
 
 function PremiereLeaguePage() {
   return (
@@ -12,23 +13,25 @@ function PremiereLeaguePage() {
           <div className="trending-title">Trending</div>
           <div className="trending-cards">
             <div className="card">
-              <div className="card-picture"></div>
-              <div className="card-title">Title</div>
-              <div className="card-time">2 hours ago</div>
-              <div className="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                non metus vel risus tempus commodo. Ut felis orci, aliquam at
-                diam sed, scelerisque dapibus ipsum. Sed varius in libero eu
-                blandit. Duis placerat porta massa sit amet pulvinar. Donec
-                blandit tellus ac tincidunt convallis. Proin imperdiet tortor
-                nulla, vel euismod neque ornare at. Cras nisi est, interdum
-                vitae blandit nec, pharetra vel est. Non aliquam. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Quisque non metus
-                vel risus tempus commodo. Ut felis orci, aliquam at diam sed,
-                scelerisque dapibus ipsum. Sed varius in libero eu blandit. Duis
-                placerat porta massa sit amet pulvinar. Donec blandit tellus ac
-                tincidunt convallis.
-              </div>
+              <Link to="/cardpage">
+                <div className="card-picture"></div>
+                <div className="card-title">Manchester City vs Liverpool</div>
+                <div className="card-time">2 hours ago</div>
+                <div className="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque non metus vel risus tempus commodo. Ut felis orci,
+                  aliquam at diam sed, scelerisque dapibus ipsum. Sed varius in
+                  libero eu blandit. Duis placerat porta massa sit amet
+                  pulvinar. Donec blandit tellus ac tincidunt convallis. Proin
+                  imperdiet tortor nulla, vel euismod neque ornare at. Cras nisi
+                  est, interdum vitae blandit nec, pharetra vel est. Non
+                  aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Quisque non metus vel risus tempus commodo. Ut felis
+                  orci, aliquam at diam sed, scelerisque dapibus ipsum. Sed
+                  varius in libero eu blandit. Duis placerat porta massa sit
+                  amet pulvinar. Donec blandit tellus ac tincidunt convallis.
+                </div>
+              </Link>
             </div>
             <div className="card">
               <div className="card-picture"></div>
@@ -134,6 +137,7 @@ function PremiereLeaguePage() {
         </div>
       </section>
       <Footer />
+      <Outlet />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Outlet, Link } from "react-router-dom";
 
 function CardPage() {
   return (
@@ -10,7 +11,7 @@ function CardPage() {
         <div className="title">PREMIERE LEAGUE</div>
         <div className="video">Video</div>
         <div className="information">
-          <div className="information-title">Title</div>
+          <div className="information-title">Manchester City vs Liverpool</div>
           <div className="results">Results: 3 - 1</div>
           <div className="description">
             <p>
@@ -98,6 +99,7 @@ function CardPage() {
         </div>
       </section>
       <Footer />
+      <Outlet />
     </>
   );
 }

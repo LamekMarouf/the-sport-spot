@@ -1,15 +1,15 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import { BiMenuAltLeft, BiCategoryAlt } from "react-icons/bi";
 import { RiHome4Line } from "react-icons/ri";
 import { BsCreditCard2Front } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
-
   const displayMenu = () => {
-    const navbarSide = document.getElementById('navbar-side');
-    navbarSide.classList.toggle('hidden')
-  }
+    const navbarSide = document.getElementById("navbar-side");
+    navbarSide.classList.toggle("hidden");
+  };
 
   return (
     <>
@@ -17,36 +17,39 @@ function Navbar() {
         <button id="hamburger" onClick={displayMenu}>
           <BiMenuAltLeft />
         </button>
-        <div className="logo">The Sport Spot</div>
+        <div className="logo">
+          <Link to="/">The Sport Spot</Link>
+        </div>
       </section>
 
       <section id="navbar-side" className="hidden">
         <ul>
-          <li>
-            <div className="navbar-icons">
-              <RiHome4Line />
-            </div>
-            <div className="navbar-text">Home</div>
-          </li>
-          <li>
-            <div className="navbar-icons">
-              <BiCategoryAlt />
-            </div>
-            Categories
-          </li>
+          <Link to="/">
+            <li>
+              <div className="navbar-icons">
+                <RiHome4Line />
+              </div>
+              <div className="navbar-text">Home</div>
+            </li>
+          </Link>
+
           <li>
             <div className="navbar-icons">
               <BsCreditCard2Front />
             </div>
             Subscription
           </li>
-          <li>
-            <div className="navbar-icons">
-              <CgProfile />
-            </div>
-            Log In
-          </li>
+
+          <Link to="/loginpage">
+            <li>
+              <div className="navbar-icons">
+                <CgProfile />
+              </div>
+              Log In
+            </li>
+          </Link>
         </ul>
+        <Outlet />
       </section>
     </>
   );

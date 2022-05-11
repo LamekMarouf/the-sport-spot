@@ -16,16 +16,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #B15D5D;
+  background-color: #570202;
   border-bottom: 2px solid #ffd9d9;
 }
 
 .navbar-top .logo {
   font-size: 40px;
-  color: #e4e4e4;
   font-weight: 700;
   border-left: #e4e4e4 3px solid;
   padding: 10px;
+}
+
+.navbar-top .logo a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+.navbar-top .logo:hover {
+  cursor: pointer;
 }
 
 .navbar-top #hamburger {
@@ -35,7 +43,7 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-radius: 10px;
-  background-color: #B15D5D;
+  background-color: #570202;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +59,7 @@ body {
 .navbar-top #hamburger:hover {
   cursor: pointer;
   background-color: #e4e4e4;
-  color: #B15D5D;
+  color: #570202;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -71,24 +79,31 @@ body {
   border-bottom: 2px solid #ffd9d9;
 }
 
+#navbar-side ul a {
+  text-decoration: none;
+}
+
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #B15D5D;
+  background-color: #570202;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  background-color: #570202;
+  color: #e4e4e4;
 }
 
 #navbar-side ul li .navbar-icons {
   margin-right: 10px;
+  text-decoration: none;
 }
 
 #navbar-side ul li:hover {
   background-color: #e4e4e4;
-  color: #B15D5D;
+  color: #570202;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -122,6 +137,10 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+}
+
+.homepage a {
+  text-decoration: none;
 }
 
 .homepage .pictures {
@@ -226,6 +245,20 @@ body {
   justify-content: center;
 }
 
+.football-page .pictures a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .football-page .pictures:hover {
   cursor: pointer;
 }
@@ -316,6 +349,10 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   background-color: #ae0e00;
+}
+
+.premiereleague-page .trending .trending-cards .card a {
+  text-decoration: none;
 }
 
 .premiereleague-page .trending .trending-cards .card .card-picture {
@@ -779,5 +816,28 @@ body {
 .card-page .information .summary ul li {
   list-style: none;
   margin: 0px  0px 40px 0px;
+}
+
+.not-found-page {
+  color: #e4e4e4;
+  font-size: 24px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#650202));
+  background-image: linear-gradient(#ae0909, #650202);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.not-found-page div {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-$navbar: #B15D5D;
+$navbar: #570202;
 $outline: #ffd9d9;
 $titleColor: #e4e4e4;
 $backgroundMain: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
@@ -27,10 +27,16 @@ body {
     border-bottom: 2px solid $outline;
     .logo {
         font-size: 40px;
-        color: $titleColor;
         font-weight: 700;
         border-left: $titleColor 3px solid;
         padding: 10px;
+        a {
+            text-decoration: none;
+            color: $titleColor;
+        }
+        &:hover {
+            cursor: pointer;
+        }
     }
     #hamburger {
         font-size: 60px;
@@ -63,14 +69,20 @@ body {
         width: 200px;
         border-right: 2px solid $outline;
         border-bottom: 2px solid $outline;
+        a {
+            text-decoration: none;
+        }
         li {
             list-style: none;
             padding: 20px;
             background-color: $navbar;
             display: flex;
             transition: .2s ease-in-out;
+            background-color: $navbar;
+            color: $titleColor;
             .navbar-icons {
                 margin-right: 10px;
+                text-decoration: none;
             }
             &:hover {
                 background-color: $titleColor;
