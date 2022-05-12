@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles/style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./components/Homepage";
-import FootballPage from "./components/FootballPage";
-import PremiereLeaguePage from "./components/PremiereLeaguePage";
-import LoginPage from "./components/LoginPage";
-import CardPage from "./components/CardPage";
-import NotFound from "./components/NotFound";
+import Homepage from "./pages/Homepage";
+import FootballPage from "./pages/FootballPage";
+import PremiereLeaguePage from "./pages/PremiereLeaguePage";
+import LoginPage from "./pages/LoginPage";
+import CardPage from "./pages/CardPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
