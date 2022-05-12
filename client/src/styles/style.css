@@ -322,6 +322,44 @@ body {
       grid-template-rows: 1fr 12fr;
 }
 
+.premiereleague-page .trending .trending-and-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.premiereleague-page .trending .trending-and-add #trending-add-card-button {
+  background-color: #570202;
+  color: #ffd9d9;
+  font-size: 36px;
+  font-weight: 700;
+  border: 2px solid #ffd9d9;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.premiereleague-page .trending .trending-and-add #trending-add-card-button:hover {
+  background-color: #ffd9d9;
+  color: #570202;
+  border: 2px solid #570202;
+  cursor: pointer;
+}
+
 .premiereleague-page .trending .trending-title {
   font-size: 40px;
   color: #e4e4e4;
@@ -338,7 +376,7 @@ body {
 .premiereleague-page .trending .trending-cards .card {
   width: 400px;
   border: 2px solid #ffd9d9;
-  background-color: #B15D5D;
+  background-color: #570202;
   margin: 20px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -400,6 +438,44 @@ body {
   margin-top: 40px;
 }
 
+.premiereleague-page .all .all-and-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.premiereleague-page .all .all-and-add #all-add-card-button {
+  background-color: #570202;
+  color: #ffd9d9;
+  font-size: 36px;
+  font-weight: 700;
+  border: 2px solid #ffd9d9;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.premiereleague-page .all .all-and-add #all-add-card-button:hover {
+  background-color: #ffd9d9;
+  color: #570202;
+  border: 2px solid #570202;
+  cursor: pointer;
+}
+
 .premiereleague-page .all .all-title {
   font-size: 40px;
   color: #e4e4e4;
@@ -416,7 +492,7 @@ body {
 .premiereleague-page .all .all-cards .card {
   width: 400px;
   border: 2px solid #ffd9d9;
-  background-color: #B15D5D;
+  background-color: #570202;
   margin: 20px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;

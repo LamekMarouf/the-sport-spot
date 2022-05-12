@@ -10,7 +10,10 @@ function PremiereLeaguePage() {
       <section className="premiereleague-page">
         <div className="title">PREMIERE LEAGUE</div>
         <div className="trending">
-          <div className="trending-title">Trending</div>
+          <div className="trending-and-add">
+            <div className="trending-title">Trending</div>
+            <button id="trending-add-card-button">+</button>
+          </div>
           <div className="trending-cards">
             <div className="card">
               <Link to="/cardpage">
@@ -74,7 +77,10 @@ function PremiereLeaguePage() {
           </div>
         </div>
         <div className="all">
+          <div className="all-and-add">
           <div className="all-title">All</div>
+          <div id="all-add-card-button">+</div>
+          </div>
           <div className="all-cards">
             <div className="card">
               <div className="card-picture"></div>
