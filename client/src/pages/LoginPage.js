@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 // Add gradient background
 
 function LoginPage() {
   return (
     <>
+    <Navbar />
       <section className="login-page">
         <div className="main-title">SPORT SPOT</div>
         <div className="signup-box">
