@@ -1,12 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { Outlet, Link } from "react-router-dom";
 
 function PremiereLeaguePage() {
   return (
     <>
-      <Navbar />
       <section className="premiereleague-page">
         <div className="title">PREMIERE LEAGUE</div>
         <div className="trending">
@@ -16,7 +13,7 @@ function PremiereLeaguePage() {
           </div>
           <div className="trending-cards">
             <div className="card">
-              <Link to="/cardpage">
+              <Link to="/home">
                 <div className="card-picture"></div>
                 <div className="card-title">Manchester City vs Liverpool</div>
                 <div className="card-time">2 hours ago</div>
@@ -142,7 +139,6 @@ function PremiereLeaguePage() {
           </div>
         </div>
       </section>
-      <Footer />
       <Outlet />
     </>
   );

@@ -1,9 +1,9 @@
-$navbar: #B15D5D;
+$navbar: #e13939;
 $outline: #ffd9d9;
-$titleColor: #e4e4e4;
-$backgroundMain: #D14141;
-$footerMain: #272727;
-$footerText: #ebebeb;
+$backgroundMain: #570606;
+$titleColor: #050404;
+$backButton: #D89D9D;
+
 
 @mixin flexCenter {
     display: flex;
@@ -12,11 +12,27 @@ $footerText: #ebebeb;
 }
 
 .footer {
-    background-color: $footerMain;
-    color: $footerText;
-    padding: 20px;
-    font-size: 20px;
-    border-top: solid 2px $footerText;
-
     @include flexCenter();
+    flex-direction: column;
+    .go-back-button {
+        background-color: $backButton;
+        color: $outline;
+        border: 2px solid $outline;
+        font-size: 20px;
+        border-radius: 6px;
+        transition: .1s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background-color: $outline;
+            border: 2px solid $backButton;
+            color: $backButton;
+            transition: .1s ease-in-out;
+        }
+    }
+    div {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $outline;
+    }
 }

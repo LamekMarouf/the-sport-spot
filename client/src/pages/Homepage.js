@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { Outlet, Link } from "react-router-dom";
 import mlbLogo from "../assets/images/mlb-logo.png";
 import nbaLogo from "../assets/images/nba-logo.png";
@@ -11,8 +9,6 @@ import soccerLogo from "../assets/images/soccer-logo.png";
 function Homepage() {
   return (
     <>
-      <Navbar />
-
       <section className="homepage">
         <Link to="/footballpage">
           <div className="pictures">
@@ -66,8 +62,6 @@ function Homepage() {
           <div className="pictures"></div>
         </Link>
       </section>
-
-      <Footer />
       <Outlet />
     </>
   );

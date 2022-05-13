@@ -1,0 +1,91 @@
+$navbar: #e13939;
+$outline: #ffd9d9;
+$backgroundMain: #570606;
+$titleColor: #050404;
+$loginSignup: #D89D9D;
+$backgroundGradient: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
+
+
+// Change font of title to a more special one
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-page {
+    @include flexCenter();
+    flex-direction: column;
+
+    .main-title {
+        font-size: 108px;
+        font-weight: 700;
+        color: $titleColor;
+    }
+    .login-box {
+        @include flexCenter();
+        flex-direction: column;
+        margin: 20px;
+        .title {
+            font-size: 26px;
+            font-weight: 600;
+            color: $loginSignup;
+        }
+        .no-account {
+            @include flexCenter();
+            margin: 40px;
+            color: $outline;
+            a {
+                color: $outline;
+                padding-left: 5px;
+            }
+        }
+    }
+        .login-form {
+            @include flexCenter();
+            flex-direction: column;
+                .email-text {
+                    border: 2px solid $outline;
+                    margin: 3px;
+                    border-radius: 10px;
+                    height: 30px;
+                    width: 300px;
+                    background-color: $loginSignup;
+                ::placeholder {
+                    color: white;
+                }
+            }
+            .password-text {
+                border: 2px solid $outline;
+                margin: 3px;
+                border-radius: 10px;
+                height: 30px;
+                width: 300px;
+                background-color: $loginSignup;
+            }
+            ::placeholder {
+                color: white;
+            }
+
+            }
+        }
+
+        .login-button {
+            background-color: $loginSignup;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $outline;
+            transition: .1s ease-in-out;
+            margin: 5px;
+            &:hover {
+                cursor: pointer;
+                background-color: $outline;
+                color: $loginSignup;
+                transition: .1s ease-in-out;
+            }
+        }

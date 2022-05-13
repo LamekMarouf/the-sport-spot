@@ -1,0 +1,117 @@
+$navbar: #e13939;
+$outline: #ffd9d9;
+$backgroundMain: #570606;
+$titleColor: #050404;
+$loginSignup: #D89D9D;
+$backgroundGradient: linear-gradient(rgb(194, 12, 12), rgb(101, 2, 2));
+
+
+// Change font of title to a more special one
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: $backgroundGradient;
+    z-index: -1;
+}
+
+.signup-page {
+    @include flexCenter();
+    flex-direction: column;
+
+    .main-title {
+        font-size: 108px;
+        font-weight: 700;
+        color: $titleColor;
+    }
+    .signup-box {
+        @include flexCenter();
+        flex-direction: column;
+        .title {
+            font-size: 26px;
+            font-weight: 600;
+            color: $loginSignup;
+        }
+        .have-account {
+            @include flexCenter();
+            color: $outline;
+            margin: 40px;
+            a {
+                color: $outline;
+                margin-left: 5px;
+            }
+        }
+    }
+    }
+    .signup-information {
+        padding: 5px;
+        @include flexCenter();
+        .signup-form {
+            @include flexCenter();
+            flex-direction: column;
+
+            .username-box {
+                .username-text {
+                    border: 2px solid $outline;
+                    margin: 3px;
+                    border-radius: 10px;
+                    height: 30px;
+                    width: 300px;
+                    background-color: $loginSignup;
+                }
+                ::placeholder {
+                    color: white;
+                }
+            }
+            .email-box {
+                .email-text {
+                    border: 2px solid $outline;
+                    margin: 3px;
+                    border-radius: 10px;
+                    height: 30px;
+                    width: 300px;
+                    background-color: $loginSignup;
+                }
+                ::placeholder {
+                    color: white;
+                }
+            }
+
+            .password-box {
+                .password-text {
+                    border: 2px solid $outline;
+                    margin: 3px;
+                    border-radius: 10px;
+                    height: 30px;
+                    width: 300px;
+                    background-color: $loginSignup;
+                }
+                ::placeholder {
+                    color: white;
+                }
+            }
+
+        }
+
+        }
+        .signup-button {
+            background-color: $loginSignup;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $outline;
+            transition: .1s ease-in-out;
+            margin: 5px;
+            &:hover {
+                cursor: pointer;
+                background-color: $outline;
+                color: $loginSignup;
+                transition: .1s ease-in-out;
+            }
+        }

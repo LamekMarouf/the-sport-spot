@@ -1,0 +1,86 @@
+$navbar: #141212;
+$outline: #d84949;
+$backgroundMain: #570606;
+$titleColor: #050404;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    @include flexCenter();
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: $navbar;
+    border-bottom: 2px solid $outline;
+    a {
+        text-decoration: none;
+        color: $outline;
+    }
+    #hamburger {
+        @include flexCenter();
+
+        font-size: 50px;
+        background-color: $navbar;
+        color: $outline;
+        border: 2px solid $outline;
+        border-radius: 5px;
+        &:hover {
+            background-color: $outline;
+            color: $navbar;
+            cursor: pointer;
+        }
+    }
+    .title {
+        font-size: 48px;
+        font-weight: 600;
+        color: $outline;
+        padding-left: 30px;
+    }
+}
+
+#navbar-side {
+    z-index: 20;
+    position: absolute;
+    ul {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: $titleColor;
+        width: 200px;
+        border-right: 2px solid $outline;
+        border-bottom: 2px solid $outline;
+        a {
+            text-decoration: none;
+            color: $outline;
+        }
+        li {
+            list-style: none;
+            padding: 20px;
+            background-color: $navbar;
+            display: flex;
+            transition: .2s ease-in-out;
+            background-color: $navbar;
+            color: $outline;
+            .navbar-icons {
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            .navbar-logout {
+                display: flex;
+            }
+            &:hover {
+                background-color: $outline;
+                color: $navbar;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

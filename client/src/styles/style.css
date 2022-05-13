@@ -1,135 +1,3 @@
-body {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  list-style: none;
-  text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#650202));
-  background-image: linear-gradient(#ae0909, #650202);
-}
-
-.navbar-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #570202;
-  border-bottom: 2px solid #ffd9d9;
-}
-
-.navbar-top .logo {
-  font-size: 40px;
-  font-weight: 700;
-  border-left: #e4e4e4 3px solid;
-  padding: 10px;
-}
-
-.navbar-top .logo a {
-  text-decoration: none;
-  color: #e4e4e4;
-}
-
-.navbar-top .logo:hover {
-  cursor: pointer;
-}
-
-.navbar-top #hamburger {
-  font-size: 60px;
-  color: #e4e4e4;
-  margin: 5px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  border-radius: 10px;
-  background-color: #570202;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.navbar-top #hamburger:hover {
-  cursor: pointer;
-  background-color: #e4e4e4;
-  color: #570202;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-#navbar-side {
-  z-index: 20;
-  position: absolute;
-}
-
-#navbar-side ul {
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  color: #e4e4e4;
-  width: 200px;
-  border-right: 2px solid #ffd9d9;
-  border-bottom: 2px solid #ffd9d9;
-}
-
-#navbar-side ul a {
-  text-decoration: none;
-}
-
-#navbar-side ul li {
-  list-style: none;
-  padding: 20px;
-  background-color: #570202;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  background-color: #570202;
-  color: #e4e4e4;
-}
-
-#navbar-side ul li .navbar-icons {
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-#navbar-side ul li:hover {
-  background-color: #e4e4e4;
-  color: #570202;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-.footer {
-  background-color: #272727;
-  color: #ebebeb;
-  padding: 20px;
-  font-size: 20px;
-  border-top: solid 2px #ebebeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .homepage {
   display: -ms-grid;
   display: grid;
@@ -154,7 +22,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
-  background-color: #B15D5D;
+  background-color: #e13939;
   margin: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -173,7 +41,7 @@ body {
 
 .homepage .text {
   font-size: 48px;
-  color: #e4e4e4;
+  color: #050404;
 }
 
 .homepage .logo {
@@ -182,6 +50,351 @@ body {
 
 .homepage #esports-logo {
   border-radius: 20px;
+}
+
+.login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-page .main-title {
+  font-size: 108px;
+  font-weight: 700;
+  color: #050404;
+}
+
+.login-page .login-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.login-page .login-box .title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #D89D9D;
+}
+
+.login-page .login-box .no-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px;
+  color: #ffd9d9;
+}
+
+.login-page .login-box .no-account a {
+  color: #ffd9d9;
+  padding-left: 5px;
+}
+
+.login-page .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-page .login-form .email-text {
+  border: 2px solid #ffd9d9;
+  margin: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  background-color: #D89D9D;
+}
+
+.login-page .login-form .email-text ::-webkit-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form .email-text :-ms-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form .email-text ::-ms-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form .email-text ::placeholder {
+  color: white;
+}
+
+.login-page .login-form .password-text {
+  border: 2px solid #ffd9d9;
+  margin: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  background-color: #D89D9D;
+}
+
+.login-page .login-form ::-webkit-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form :-ms-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form ::-ms-input-placeholder {
+  color: white;
+}
+
+.login-page .login-form ::placeholder {
+  color: white;
+}
+
+.login-button {
+  background-color: #D89D9D;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd9d9;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin: 5px;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  background-color: #ffd9d9;
+  color: #D89D9D;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c20c0c), to(#650202));
+  background-image: linear-gradient(#c20c0c, #650202);
+  z-index: -1;
+}
+
+.signup-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-page .main-title {
+  font-size: 108px;
+  font-weight: 700;
+  color: #050404;
+}
+
+.signup-page .signup-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-page .signup-box .title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #D89D9D;
+}
+
+.signup-page .signup-box .have-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffd9d9;
+  margin: 40px;
+}
+
+.signup-page .signup-box .have-account a {
+  color: #ffd9d9;
+  margin-left: 5px;
+}
+
+.signup-information {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-information .signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-information .signup-form .username-box .username-text {
+  border: 2px solid #ffd9d9;
+  margin: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  background-color: #D89D9D;
+}
+
+.signup-information .signup-form .username-box ::-webkit-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .username-box :-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .username-box ::-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .username-box ::placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .email-box .email-text {
+  border: 2px solid #ffd9d9;
+  margin: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  background-color: #D89D9D;
+}
+
+.signup-information .signup-form .email-box ::-webkit-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .email-box :-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .email-box ::-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .email-box ::placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .password-box .password-text {
+  border: 2px solid #ffd9d9;
+  margin: 3px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  background-color: #D89D9D;
+}
+
+.signup-information .signup-form .password-box ::-webkit-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .password-box :-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .password-box ::-ms-input-placeholder {
+  color: white;
+}
+
+.signup-information .signup-form .password-box ::placeholder {
+  color: white;
+}
+
+.signup-button {
+  background-color: #D89D9D;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd9d9;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin: 5px;
+}
+
+.signup-button:hover {
+  cursor: pointer;
+  background-color: #ffd9d9;
+  color: #D89D9D;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .football-page {
@@ -542,7 +755,7 @@ body {
   height: 250px;
 }
 
-.login-page {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,252 +771,33 @@ body {
           flex-direction: column;
 }
 
-.login-page .main-title {
-  font-size: 108px;
-  color: #050404;
-}
-
-.login-page .signup-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 400px;
-  height: 400px;
-  border: 2px solid #ffd9d9;
-  border-radius: 10px;
-  background-color: #863737;
-  padding: 0px 20px;
-  margin: 61px;
-}
-
-.login-page .signup-option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #D89D9D;
-  font-size: 36px;
-}
-
-.login-page .signup-option p {
-  margin: 15px;
-}
-
-.login-page .signup-option #toggle-signup {
-  background-color: #570606;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.login-page .signup-option #toggle-signup:hover {
-  cursor: pointer;
-}
-
-.login-page .signup-option #toggle-login {
-  cursor: pointer;
-}
-
-.login-page .signup-information {
-  padding: 5px;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name .firstname-text {
-  width: 167px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
+.footer .go-back-button {
   background-color: #D89D9D;
   color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name ::-webkit-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name :-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name ::-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name ::placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .first-and-last-name .lastname-text {
-  width: 170px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
   border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .email .email-text {
-  width: 350px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .email ::-webkit-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .email :-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .email ::-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .email ::placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .password .password-text {
-  width: 350px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .password ::-webkit-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .password :-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .password ::-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .password ::placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode .phone-text {
-  width: 196px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode .postcode-text {
-  width: 140px;
-  border-radius: 20px;
-  margin: 3px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode ::-webkit-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode :-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode ::-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .phone-and-postcode ::placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .street-address .street-address-text {
-  width: 350px;
-  border-radius: 20px;
-  height: 25px;
-  border: 2px solid #ffd9d9;
-  background-color: #D89D9D;
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .street-address ::-webkit-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .street-address :-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .street-address ::-ms-input-placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-information .signup-form .street-address ::placeholder {
-  color: #ffd9d9;
-}
-
-.login-page .signup-button {
-  background-color: #D89D9D;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 10px;
   font-size: 20px;
-  font-weight: 700;
-  color: #ffd9d9;
+  border-radius: 6px;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
-.login-page .signup-button:hover {
+.footer .go-back-button:hover {
   cursor: pointer;
   background-color: #ffd9d9;
+  border: 2px solid #D89D9D;
   color: #D89D9D;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
-.card-page {
+.footer div {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffd9d9;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,107 +807,102 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 50px;
-}
-
-.card-page .title {
-  font-size: 72px;
-  color: #e4e4e4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.card-page .video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 300px;
-  width: 600px;
-  background-color: #cdcdcd;
-}
-
-.card-page .information {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5fr 1fr;
-      grid-template-columns: 5fr 1fr;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
-  -ms-grid-rows: 1fr 10fr;
-      grid-template-rows: 1fr 10fr;
-}
-
-.card-page .information .information-title {
-  font-size: 36px;
-  color: #e4e4e4;
-}
-
-.card-page .information .results {
-  font-size: 36px;
-  color: #e4e4e4;
-}
-
-.card-page .information .description {
-  font-size: 16px;
-  color: #e4e4e4;
-  background-color: #570202;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 20px;
+  background-color: #141212;
+  border-bottom: 2px solid #d84949;
 }
 
-.card-page .information .summary {
-  font-size: 16px;
-  color: #e4e4e4;
-  background-color: #570202;
-  padding: 10px;
+.navbar a {
+  text-decoration: none;
+  color: #d84949;
 }
 
-.card-page .information .summary ul {
+.navbar #hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  background-color: #141212;
+  color: #d84949;
+  border: 2px solid #d84949;
+  border-radius: 5px;
+}
+
+.navbar #hamburger:hover {
+  background-color: #d84949;
+  color: #141212;
+  cursor: pointer;
+}
+
+.navbar .title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #d84949;
+  padding-left: 30px;
+}
+
+#navbar-side {
+  z-index: 20;
+  position: absolute;
+}
+
+#navbar-side ul {
+  font-size: 20px;
   padding: 0;
   margin: 0;
+  color: #050404;
+  width: 200px;
+  border-right: 2px solid #d84949;
+  border-bottom: 2px solid #d84949;
 }
 
-.card-page .information .summary ul li {
+#navbar-side ul a {
+  text-decoration: none;
+  color: #d84949;
+}
+
+#navbar-side ul li {
   list-style: none;
-  margin: 0px  0px 40px 0px;
-}
-
-.not-found-page {
-  color: #e4e4e4;
-  font-size: 24px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0909), to(#650202));
-  background-image: linear-gradient(#ae0909, #650202);
+  padding: 20px;
+  background-color: #141212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  background-color: #141212;
+  color: #d84949;
 }
 
-.not-found-page div {
-  margin: 5px;
+#navbar-side ul li .navbar-icons {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#navbar-side ul li .navbar-logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar-side ul li:hover {
+  background-color: #d84949;
+  color: #141212;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

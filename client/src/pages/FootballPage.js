@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { Outlet, Link } from "react-router-dom";
 import bundesligaLogo from "../assets/images/bundesliga-logo.jpg";
 import laligaLogo from "../assets/images/laliga-logo.png";
@@ -15,12 +13,11 @@ import serieALogo from "../assets/images/seriea-logo.png";
 function FootballPage() {
   return (
     <>
-      <Navbar />
       <section className="football-page">
         <div className="left-column">
           <div className="title">Football</div>
           <div className="pictures">
-            <Link to="/premiereleaguepage">
+            <Link to="/home ">
               <img
                 src={premiereLeagueLogo}
                 alt="Premiere League Logo"
@@ -84,7 +81,6 @@ function FootballPage() {
           </div>
         </div>
       </section>
-      <Footer />
       <Outlet />
     </>
   );
