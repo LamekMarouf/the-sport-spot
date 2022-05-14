@@ -959,4 +959,38 @@ body {
   color: #fff0f0;
   padding: 10px;
 }
+
+.comments .comment-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffd9d9;
+  margin-bottom: 10px;
+}
+
+.comments .comment-form .comment-box .comment-text-box {
+  width: 100%;
+}
+
+.comments .comment-form .character-count p {
+  color: #ffd9d9;
+  font-size: 12px;
+}
+
+.comments .comment-form .add-comment-button {
+  background-color: #D89D9D;
+  color: #ffd9d9;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.comments .comment-form .add-comment-button:hover {
+  background-color: #ffd9d9;
+  color: #D89D9D;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */

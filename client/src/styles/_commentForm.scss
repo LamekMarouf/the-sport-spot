@@ -1,0 +1,48 @@
+$navbar: #e13939;
+$outline: #ffd9d9;
+$backgroundMain: #570606;
+$titleColor: #050404;
+$loginSignup: #D89D9D;
+$backgroundGradient: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments {
+    .comment-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: $outline;
+        margin-bottom: 10px;
+    }
+    .comment-form {
+        .comment-box {
+            .comment-text-box {
+                width: 100%;
+            }
+        }
+        .character-count {
+            p {
+                color: $outline;
+                font-size: 12px;
+            }
+        }
+        .add-comment-button {
+            background-color: $loginSignup;
+            color: $outline;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: .1s ease-in-out;
+            &:hover {
+                background-color: $outline;
+                color: $loginSignup;
+                cursor: pointer;
+                transition: .1s ease-in-out;
+            }
+        }
+    }
+}
