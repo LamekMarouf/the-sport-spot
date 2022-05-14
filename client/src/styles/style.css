@@ -905,4 +905,58 @@ body {
 .hidden {
   display: none;
 }
+
+.card-page {
+  padding: 30px;
+}
+
+.thought-list-page .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 40px 0px 0px 20px;
+}
+
+.thought-list-page .thought-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-size: 12px;
+}
+
+.thought-list-page .thought-list .card {
+  background-color: #570606;
+  color: #fff0f0;
+  margin: 20px;
+  height: 500px;
+  border: 2px solid #fff0f0;
+  padding: 10px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.thought-list-page .thought-list .card .thought-text {
+  font-size: 14px;
+}
+
+.thought-list-page .thought-list .card a {
+  background-color: #141212;
+  color: #fff0f0;
+  padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */

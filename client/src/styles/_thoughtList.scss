@@ -1,0 +1,41 @@
+$navbar: #141212;
+$outline: #fff0f0;
+$backgroundMain: #570606;
+$titleColor: #050404;
+$loginSignup: #D89D9D;
+$backgroundGradient: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
+
+.thought-list-page {
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 40px 0px 0px 20px;
+    }
+    .thought-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 12px;
+        .card {
+            background-color: $backgroundMain;
+            color: $outline;
+            margin: 20px;
+            height: min(500px);
+            border: 2px solid $outline;
+            padding: 10px;
+            font-size: 12px;
+            @include flexCenter();
+            flex-direction: column;
+            justify-content: flex-start;
+            .thought-text {
+                font-size: 14px;
+            }
+            a {
+                background-color: $navbar;
+                color: $outline;
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
