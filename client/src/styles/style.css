@@ -993,4 +993,34 @@ body {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
+
+#comments-title {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffd9d9;
+}
+
+.comments {
+  margin: 20px;
+}
+
+.comments .comment-card {
+  background-color: #e13939;
+  border: solid 2px #ffd9d9;
+  padding: 10px;
+}
+
+.comments .comment-card .card-header {
+  font-weight: bold;
+}
+
+.comments .comment-card .card-body {
+  color: #ffd9d9;
+}
+
+.comments .comment-card .comment-time {
+  font-weight: bold;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
