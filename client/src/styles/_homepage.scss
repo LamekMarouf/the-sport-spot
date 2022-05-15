@@ -11,7 +11,7 @@ $titleColor: #050404;
 
 .homepage {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     a {
         text-decoration: none;
@@ -19,14 +19,18 @@ $titleColor: #050404;
     .pictures {
         @include flexCenter();
         height: 300px;
-        background-color: $navbar;
         margin: 30px;
-        flex-direction: column;
-        border: 3px solid $outline;
+        padding: 0px 2g00px;
+        justify-content: space-between;
         &:hover {
             cursor: pointer;
             .text {
                 text-decoration: underline;
+            }
+        }
+        .picture-text {
+            .caption {
+                color: white;
             }
         }
     }
@@ -35,7 +39,7 @@ $titleColor: #050404;
         color: $titleColor;
     }
     .logo {
-        height: 200px;
+        height: 300px;
     }
     #esports-logo {
         border-radius: 20px;

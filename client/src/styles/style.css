@@ -1,8 +1,8 @@
 .homepage {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -22,13 +22,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
-  background-color: #e13939;
   margin: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 3px solid #ffd9d9;
+  padding: 0px 2g00px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .homepage .pictures:hover {
@@ -39,13 +37,17 @@
   text-decoration: underline;
 }
 
+.homepage .pictures .picture-text .caption {
+  color: white;
+}
+
 .homepage .text {
   font-size: 48px;
   color: #050404;
 }
 
 .homepage .logo {
-  height: 200px;
+  height: 300px;
 }
 
 .homepage #esports-logo {
@@ -204,9 +206,10 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c20c0c), to(#650202));
-  background-image: linear-gradient(#c20c0c, #650202);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#650202), to(#ae0909));
+  background-image: linear-gradient(to bottom right, #650202, #ae0909);
   z-index: -1;
+  font-family: fantasy;
 }
 
 .signup-page {

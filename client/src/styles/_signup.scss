@@ -3,7 +3,7 @@ $outline: #ffd9d9;
 $backgroundMain: #570606;
 $titleColor: #050404;
 $loginSignup: #D89D9D;
-$backgroundGradient: linear-gradient(rgb(194, 12, 12), rgb(101, 2, 2));
+$backgroundGradient: linear-gradient(to bottom right, rgb(101, 2, 2), rgb(174, 9, 9));
 
 
 // Change font of title to a more special one
@@ -17,6 +17,7 @@ $backgroundGradient: linear-gradient(rgb(194, 12, 12), rgb(101, 2, 2));
 body {
     background-image: $backgroundGradient;
     z-index: -1;
+    font-family: fantasy;
 }
 
 .signup-page {

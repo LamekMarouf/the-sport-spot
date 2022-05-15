@@ -13,13 +13,19 @@ function Homepage() {
         <Link to="/footballpage">
           <div className="pictures">
             <img src={soccerLogo} alt="Soccer Logo" className="logo"></img>
-            <div className="text">Football</div>
+            <div className="picture-text">
+              <div className="text">Football</div>
+              <div className="caption">
+                Life is like a game of soccer. You need goals. If there are no
+                goals in your life then you can't win.
+              </div>
+            </div>
           </div>
         </Link>
         <Link to="/notfound">
           <div className="pictures">
-            <img src={mlbLogo} alt="MLB Logo" className="logo"></img>
             <div className="text">MLB</div>
+            <img src={mlbLogo} alt="MLB Logo" className="logo"></img>
           </div>
         </Link>
         <Link to="/notfound">
@@ -31,35 +37,14 @@ function Homepage() {
 
         <Link to="/notfound">
           <div className="pictures">
+            <div className="text">Esports</div>
             <img
               src={esportsLogo}
               alt="Esports Logo"
               className="logo"
               id="esports-logo"
             ></img>
-            <div className="text">Esports</div>
           </div>
-        </Link>
-
-        <Link to="/notfound">
-          <div className="pictures">
-            <img src={nflLogo} alt="NFL Logo" className="logo"></img>
-            <div className="text">NFL</div>
-          </div>
-        </Link>
-
-        <Link to="/notfound">
-          <div className="pictures"></div>
-        </Link>
-
-        <Link to="/notfound">
-          <div className="pictures"></div>
-        </Link>
-        <Link to="/notfound">
-          <div className="pictures"></div>
-        </Link>
-        <Link to="/notfound">
-          <div className="pictures"></div>
         </Link>
       </section>
       <Outlet />
