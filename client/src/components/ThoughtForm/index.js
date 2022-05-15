@@ -53,38 +53,52 @@ const ThoughtForm = () => {
     }
   };
 
-  return (
-    <div className="summary-box">
-      <div className="summary-title">Add a summary</div>
-      {Auth.loggedIn() ? (
-        <>
-          <form onSubmit={handleFormSubmit} className="summary-text-box">
-            <div>
-              <textarea
-                name="thoughtText"
-                className="summary-text"
-                placeholder="Description..."
-                value={thoughtText}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-            <div className="character-count">
-              Character Count: {characterCount}/1000
-            </div>
+  const displayAdd = () => {
+    const navbarSide = document.getElementById("summary-box");
+    navbarSide.classList.toggle("hidden");
+  };
 
-            <div>
-              <button type="submit" className="add-summary-button">Add</button>
-            </div>
-            {error && <div>{error.message}</div>}
-          </form>
-        </>
-      ) : (
-        <p>
-          You need to be logged in to share your thoughts. Please{" "}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )}
-    </div>
+  return (
+    <>
+      <div className="show-add-box">
+        <div id="show-add" onClick={displayAdd}>
+          Add a summary
+        </div>
+      </div>
+      <div id="summary-box" className="hidden">
+        <div className="summary-title">Add a summary</div>
+        {Auth.loggedIn() ? (
+          <>
+            <form onSubmit={handleFormSubmit} className="summary-text-box">
+              <div>
+                <textarea
+                  name="thoughtText"
+                  className="summary-text"
+                  placeholder="Description..."
+                  value={thoughtText}
+                  onChange={handleChange}
+                ></textarea>
+              </div>
+              <div className="character-count">
+                Character Count: {characterCount}/1000
+              </div>
+
+              <div>
+                <button type="submit" className="add-summary-button">
+                  Add
+                </button>
+              </div>
+              {error && <div>{error.message}</div>}
+            </form>
+          </>
+        ) : (
+          <p>
+            You need to be logged in to share your thoughts. Please{" "}
+            <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          </p>
+        )}
+      </div>
+    </>
   );
 };
 

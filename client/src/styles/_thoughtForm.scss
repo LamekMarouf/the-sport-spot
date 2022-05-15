@@ -1,4 +1,23 @@
-.summary-box {
+.show-add-box {
+    @include flexCenter();
+    #show-add {
+        background-color: $backgroundMain;
+        width: 200px;
+        color: $outline;
+        padding: 10px;
+        border: 2px solid $outline;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    
+        @include flexCenter();
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#summary-box {
     background-color: $backgroundMain;
     padding: 10px;
     border: 2px solid $outline;
@@ -35,4 +54,8 @@
             }
         }
     }
+}
+
+.hidden {
+    display: none;
 }
