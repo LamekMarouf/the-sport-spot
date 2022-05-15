@@ -1023,4 +1023,19 @@ body {
   font-weight: bold;
   font-size: 12px;
 }
+
+.comment-page .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  color: #ffd9d9;
+}
+
+.comment-page .post {
+  background-color: #e13939;
+  margin: 20px;
+  color: #ffd9d9;
+  border: 2px solid #ffd9d9;
+  padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */

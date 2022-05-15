@@ -1,0 +1,25 @@
+#comments-title {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: $outline;
+}
+
+.comments {
+    margin: 20px;
+    .comment-card {
+        background-color: $navbar;
+        border: solid 2px $outline;
+        padding: 10px;
+        .card-header {
+            font-weight: bold;
+        }
+        .card-body {
+            color: $outline;
+        }
+        .comment-time {
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+}
