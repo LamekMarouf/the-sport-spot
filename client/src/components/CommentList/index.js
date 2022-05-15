@@ -6,21 +6,19 @@ const CommentList = ({ comments = [] }) => {
   }
 
   return (
-    <>
+    <section className="comments-section">
       <div id="comments-title">Comments</div>
       <div className="comments">
         {comments &&
           comments.map((comment) => (
             <div className="comment-card">
-              <div className="card-header">
-                {comment.commentAuthor}
-              </div>
+              <div className="card-header">{comment.commentAuthor}</div>
               <p className="card-body">{comment.commentText}</p>
               <div className="comment-time">{comment.createdAt}</div>
             </div>
           ))}
       </div>
-    </>
+    </section>
   );
 };
 
