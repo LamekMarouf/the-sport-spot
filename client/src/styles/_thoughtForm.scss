@@ -1,0 +1,38 @@
+.summary-box {
+    background-color: $backgroundMain;
+    padding: 10px;
+    border: 2px solid $outline;
+    .summary-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $outline;
+    }
+    .summary-text-box {
+        .summary-text {
+            width: 100%;
+            margin: 10px 0px;
+        }
+        .character-count {
+            font-size: 12px;
+            color: $outline;
+        }
+        .add-summary-button {
+            background-color: $outline;
+            color: $backgroundMain;
+            font-weight: bold;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            margin: 10px 0px;
+            border: 2px solid $outline;
+            transition: .1s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                background-color: $backgroundMain;
+                color: $outline;
+                border: 2px solid $outline;
+                transition: .1s ease-in-out;
+            }
+        }
+    }
+}
