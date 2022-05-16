@@ -1001,17 +1001,21 @@ body {
   transition: .1s ease-in-out;
 }
 
-#comments-title {
+.no-comments {
   margin: 20px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffd9d9;
-  padding-top: 10px;
 }
 
 .comments-section {
   border: 2px solid #ffd9d9;
   margin: 20px;
+}
+
+.comments-section #comments-title {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffd9d9;
+  padding-top: 10px;
 }
 
 .comments-section .comments {

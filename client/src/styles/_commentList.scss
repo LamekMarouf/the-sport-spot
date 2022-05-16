@@ -1,14 +1,17 @@
-#comments-title {
+.no-comments {
     margin: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: $outline;
-    padding-top: 10px;
 }
 
 .comments-section {
     border: 2px solid $outline;
     margin: 20px;
+    #comments-title {
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $outline;
+        padding-top: 10px;
+    }    
     .comments {
     margin: 20px;
     .comment-card {
