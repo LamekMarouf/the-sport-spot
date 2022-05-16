@@ -19,7 +19,7 @@ $backgroundGradient: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
             background-color: $backgroundMain;
             color: $outline;
             margin: 20px;
-            height: min(500px);
+            height: min(300px) max(1000px);
             border: 2px solid $outline;
             padding: 10px;
             font-size: 12px;
