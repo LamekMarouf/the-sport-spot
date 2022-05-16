@@ -210,6 +210,8 @@ body {
   background-image: linear-gradient(to bottom right, #650202, #ae0909);
   z-index: -1;
   font-family: fantasy;
+  padding: 0;
+  margin: 0;
 }
 
 .signup-page {
