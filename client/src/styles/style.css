@@ -11,7 +11,7 @@
   text-decoration: none;
 }
 
-.homepage .pictures {
+.homepage .picture-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,28 +22,94 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
-  margin: 30px;
-  padding: 0px 2g00px;
+  padding: 50px 200px;
+  background-color: #121212;
+}
+
+.homepage .picture-one a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 800px;
 }
 
-.homepage .pictures:hover {
-  cursor: pointer;
+.homepage .picture-one a:hover {
+  color: #dad6d6;
 }
 
-.homepage .pictures:hover .text {
+.homepage .picture-one a:hover .picture-text .text {
   text-decoration: underline;
 }
 
-.homepage .pictures .picture-text .caption {
+.homepage .picture-one a:hover .picture-text #caption {
+  display: block;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+  text-decoration: none;
+}
+
+.homepage .picture-one .picture-text {
+  width: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.homepage .picture-one .picture-text #caption {
+  color: white;
+  display: none;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+}
+
+.homepage .picture-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  padding: 50px 200px;
+  background-color: #120b25;
+}
+
+.homepage .picture-two a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 800px;
+}
+
+.homepage .picture-two .picture-text #caption {
   color: white;
 }
 
 .homepage .text {
   font-size: 48px;
-  color: #050404;
+  color: #dad6d6;
 }
 
 .homepage .logo {
@@ -206,10 +272,10 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#650202), to(#ae0909));
-  background-image: linear-gradient(to bottom right, #650202, #ae0909);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1b1919), to(#22173d));
+  background-image: linear-gradient(to bottom right, #1b1919, #22173d);
   z-index: -1;
-  font-family: fantasy;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -816,13 +882,13 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 20px;
-  background-color: #141212;
-  border-bottom: 2px solid #d84949;
+  background-color: #231546;
+  border-bottom: 2px solid #dad6d6;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #d84949;
+  color: #dad6d6;
 }
 
 .navbar #hamburger {
@@ -836,22 +902,22 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
-  background-color: #141212;
-  color: #d84949;
-  border: 2px solid #d84949;
+  background-color: #231546;
+  color: #dad6d6;
+  border: 2px solid #dad6d6;
   border-radius: 5px;
 }
 
 .navbar #hamburger:hover {
-  background-color: #d84949;
-  color: #141212;
+  background-color: #dad6d6;
+  color: #231546;
   cursor: pointer;
 }
 
 .navbar .title {
   font-size: 48px;
   font-weight: 600;
-  color: #d84949;
+  color: #dad6d6;
   padding-left: 30px;
 }
 
@@ -866,26 +932,26 @@ body {
   margin: 0;
   color: #050404;
   width: 200px;
-  border-right: 2px solid #d84949;
-  border-bottom: 2px solid #d84949;
+  border-right: 2px solid #dad6d6;
+  border-bottom: 2px solid #dad6d6;
 }
 
 #navbar-side ul a {
   text-decoration: none;
-  color: #d84949;
+  color: #dad6d6;
 }
 
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #141212;
+  background-color: #231546;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  background-color: #141212;
-  color: #d84949;
+  background-color: #231546;
+  color: #dad6d6;
 }
 
 #navbar-side ul li .navbar-icons {
@@ -900,8 +966,8 @@ body {
 }
 
 #navbar-side ul li:hover {
-  background-color: #d84949;
-  color: #141212;
+  background-color: #dad6d6;
+  color: #231546;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -957,6 +1023,7 @@ body {
 
 .thought-list-page .thought-list .card .thought-text {
   font-size: 14px;
+  margin: 0 0 10px 0;
 }
 
 .thought-list-page .thought-list .card a {

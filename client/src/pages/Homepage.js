@@ -7,36 +7,37 @@ import esportsLogo from "../assets/images/esports-logo.jpg";
 import soccerLogo from "../assets/images/soccer-logo.png";
 
 function Homepage() {
+
   return (
     <>
       <section className="homepage">
-        <Link to="/footballpage">
-          <div className="pictures">
-            <img src={soccerLogo} alt="Soccer Logo" className="logo"></img>
+        <div className="picture-one">
+          <Link to="/footballpage">
+            <img src={soccerLogo} alt="Football Logo" className="logo"></img>
             <div className="picture-text">
               <div className="text">Football</div>
-              <div className="caption">
-                Life is like a game of soccer. You need goals. If there are no
-                goals in your life then you can't win.
+              <div id="caption">
+                Get the latest up-to-date news for the worlds's most popular
+                sport. From the premiere league to La Liga to the A-League.
               </div>
             </div>
-          </div>
-        </Link>
-        <Link to="/notfound">
-          <div className="pictures">
+          </Link>
+        </div>
+        <div className="picture-two">
+          <Link to="/notfound">
             <div className="text">MLB</div>
             <img src={mlbLogo} alt="MLB Logo" className="logo"></img>
-          </div>
-        </Link>
+          </Link>
+        </div>
         <Link to="/notfound">
-          <div className="pictures">
+          <div className="picture-one">
             <img src={nbaLogo} alt="NBA Logo" className="logo"></img>
             <div className="text">NBA</div>
           </div>
         </Link>
 
         <Link to="/notfound">
-          <div className="pictures">
+          <div className="picture-two">
             <div className="text">Esports</div>
             <img
               src={esportsLogo}

@@ -28,6 +28,7 @@ $backgroundGradient: linear-gradient(rgb(174, 9, 9), rgb(101, 2, 2));
             justify-content: flex-start;
             .thought-text {
                 font-size: 14px;
+                margin: 0 0 10px 0;
             }
             a {
                 background-color: $navbar;

@@ -1,7 +1,9 @@
-$navbar: #e13939;
-$outline: #ffd9d9;
+$navbar: #231546;
+$textColor: #dad6d6;
 $backgroundMain: #570606;
 $titleColor: #050404;
+$pictureOne: #121212;
+$pictureTwo: #120b25;
 
 @mixin flexCenter {
     display: flex;
@@ -16,27 +18,60 @@ $titleColor: #050404;
     a {
         text-decoration: none;
     }
-    .pictures {
+    .picture-one {
         @include flexCenter();
         height: 300px;
-        margin: 30px;
-        padding: 0px 2g00px;
-        justify-content: space-between;
-        &:hover {
-            cursor: pointer;
-            .text {
-                text-decoration: underline;
-            }
+        padding: 50px 200px;
+        background-color: $pictureOne;
+        a {
+          @include flexCenter();
+          justify-content: space-between;
+          width: 800px;
+          &:hover {
+              color: $textColor;
+              .picture-text {
+                  .text {
+                      text-decoration: underline;
+                  }
+                  #caption {
+                      display: block;
+                      transition: .9s ease-in-out;
+                      text-decoration: none;
+                  }
+              }
+        }
         }
         .picture-text {
-            .caption {
+            width: 450px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            #caption {
+                color: white;
+                display: none;
+                transition: .9s ease-in-out;
+            }
+        }
+    }
+    .picture-two {
+        @include flexCenter();
+        height: 300px;
+        padding: 50px 200px;
+        background-color: $pictureTwo;
+        a {
+          @include flexCenter();
+          justify-content: space-between;
+          width: 800px;
+        }
+        .picture-text {
+            #caption {
                 color: white;
             }
         }
     }
+
     .text {
         font-size: 48px;
-        color: $titleColor;
+        color: $textColor
     }
     .logo {
         height: 300px;
@@ -45,3 +80,4 @@ $titleColor: #050404;
         border-radius: 20px;
     }
 }
+
