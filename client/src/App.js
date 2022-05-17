@@ -16,8 +16,6 @@ import FootballPage from "./pages/FootballPage";
 
 import SingleThought from "./pages/SingleThought";
 import Profile from "./pages/Profile";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import './styles/style.css';
 
 // Construct our main GraphQL API endpoint
@@ -48,7 +46,6 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-          <Header />
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/login" element={<Login />} />
@@ -59,7 +56,6 @@ function App() {
               <Route path="/profiles/:username" element={<Profile />} />
               <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
             </Routes>
-          <Footer />
       </Router>
     </ApolloProvider>
   );

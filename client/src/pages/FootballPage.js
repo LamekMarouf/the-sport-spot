@@ -1,5 +1,7 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import bundesligaLogo from "../assets/images/bundesliga-logo.jpg";
 import laligaLogo from "../assets/images/laliga-logo.png";
 import ligueOneLogo from "../assets/images/ligue1-logo.png";
@@ -10,6 +12,8 @@ import serieALogo from "../assets/images/seriea-logo.png";
 function FootballPage() {
   return (
     <>
+      <Header />
+
       <section className="football-page">
         <div className="left-column">
           <div className="title">Football</div>
@@ -79,6 +83,7 @@ function FootballPage() {
         </div>
       </section>
       <Outlet />
+      <Footer />
     </>
   );
 }
