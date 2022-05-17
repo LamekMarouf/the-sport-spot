@@ -13,7 +13,6 @@ import CardPage from "./pages/CardPage";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import FootballPage from "./pages/FootballPage";
-import PremiereLeaguePage from "./pages/PremiereLeaguePage";
 
 import SingleThought from "./pages/SingleThought";
 import Profile from "./pages/Profile";
@@ -56,7 +55,6 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/footballpage" element={<FootballPage />} />
               <Route path="/home" element={<CardPage />} />
-              <Route path="/premiereleaguepage" element={<PremiereLeaguePage />} />
               <Route path="/me" element={<Profile />} />
               <Route path="/profiles/:username" element={<Profile />} />
               <Route path="/thoughts/:thoughtId" element={<SingleThought />} />

@@ -1,8 +1,3 @@
-$navbar: #B15D5D;
-$outline: #ffd9d9;
-$titleColor: #e4e4e4;
-$backgroundMain: #D14141;
-
 @mixin flexCenter {
     display: flex;
     align-items: center;
@@ -31,7 +26,7 @@ $backgroundMain: #D14141;
     }
     .pictures {
         background-color: $navbar;
-        border: 4px solid $navbar;
+        border: 4px solid $outline;
         width: 500px;
         margin: 10px;
         background-color: white;

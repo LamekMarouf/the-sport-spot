@@ -23,7 +23,7 @@
           justify-content: center;
   height: 300px;
   padding: 50px 200px;
-  background-color: #121212;
+  background-image: radial-gradient(#22173d, #101010);
 }
 
 .homepage .picture-one a {
@@ -43,7 +43,7 @@
 }
 
 .homepage .picture-one a:hover {
-  color: #dad6d6;
+  color: #ffffff;
 }
 
 .homepage .picture-one a:hover .picture-text .text {
@@ -84,7 +84,7 @@
           justify-content: center;
   height: 300px;
   padding: 50px 200px;
-  background-color: #120b25;
+  background-image: radial-gradient(#22173d, #101010);
 }
 
 .homepage .picture-two a {
@@ -103,13 +103,39 @@
   width: 800px;
 }
 
+.homepage .picture-two a:hover {
+  color: #ffffff;
+}
+
+.homepage .picture-two a:hover .picture-text .text {
+  text-decoration: underline;
+}
+
+.homepage .picture-two a:hover .picture-text #caption {
+  display: block;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+  text-decoration: none;
+}
+
+.homepage .picture-two .picture-text {
+  width: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
 .homepage .picture-two .picture-text #caption {
   color: white;
+  display: none;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
 }
 
 .homepage .text {
   font-size: 48px;
-  color: #dad6d6;
+  color: #ffffff;
 }
 
 .homepage .logo {
@@ -162,7 +188,7 @@
 .login-page .login-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #D89D9D;
+  color: #222222;
 }
 
 .login-page .login-box .no-account {
@@ -176,11 +202,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 40px;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 .login-page .login-box .no-account a {
-  color: #ffd9d9;
+  color: #8c799e;
   padding-left: 5px;
 }
 
@@ -201,12 +227,12 @@
 }
 
 .login-page .login-form .email-text {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #D89D9D;
+  background-color: #222222;
 }
 
 .login-page .login-form .email-text ::-webkit-input-placeholder {
@@ -226,12 +252,12 @@
 }
 
 .login-page .login-form .password-text {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #D89D9D;
+  background-color: #222222;
 }
 
 .login-page .login-form ::-webkit-input-placeholder {
@@ -251,13 +277,13 @@
 }
 
 .login-button {
-  background-color: #D89D9D;
+  background-color: #222222;
   border: none;
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #ffd9d9;
+  color: #8c799e;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
@@ -265,15 +291,15 @@
 
 .login-button:hover {
   cursor: pointer;
-  background-color: #ffd9d9;
-  color: #D89D9D;
+  background-color: #8c799e;
+  color: #222222;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#1b1919), to(#22173d));
-  background-image: linear-gradient(to bottom right, #1b1919, #22173d);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#141415), to(#22173d));
+  background-image: linear-gradient(to bottom right, #141415, #22173d);
   z-index: -1;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
@@ -321,7 +347,7 @@ body {
 .signup-page .signup-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #D89D9D;
+  color: #222222;
 }
 
 .signup-page .signup-box .have-account {
@@ -334,12 +360,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffd9d9;
+  color: #8c799e;
   margin: 40px;
 }
 
 .signup-page .signup-box .have-account a {
-  color: #ffd9d9;
+  color: #8c799e;
   margin-left: 5px;
 }
 
@@ -373,12 +399,12 @@ body {
 }
 
 .signup-information .signup-form .username-box .username-text {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #D89D9D;
+  background-color: #222222;
 }
 
 .signup-information .signup-form .username-box ::-webkit-input-placeholder {
@@ -398,12 +424,12 @@ body {
 }
 
 .signup-information .signup-form .email-box .email-text {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #D89D9D;
+  background-color: #222222;
 }
 
 .signup-information .signup-form .email-box ::-webkit-input-placeholder {
@@ -423,12 +449,12 @@ body {
 }
 
 .signup-information .signup-form .password-box .password-text {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #D89D9D;
+  background-color: #222222;
 }
 
 .signup-information .signup-form .password-box ::-webkit-input-placeholder {
@@ -448,13 +474,13 @@ body {
 }
 
 .signup-button {
-  background-color: #D89D9D;
+  background-color: #222222;
   border: none;
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #ffd9d9;
+  color: #8c799e;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
@@ -462,8 +488,8 @@ body {
 
 .signup-button:hover {
   cursor: pointer;
-  background-color: #ffd9d9;
-  color: #D89D9D;
+  background-color: #8c799e;
+  color: #222222;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
@@ -506,8 +532,8 @@ body {
 }
 
 .football-page .pictures {
-  background-color: #B15D5D;
-  border: 4px solid #B15D5D;
+  background-color: #180e2f;
+  border: 4px solid #8c799e;
   width: 500px;
   margin: 10px;
   background-color: white;
@@ -575,257 +601,6 @@ body {
   color: black;
 }
 
-.premiereleague-page {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 4fr 4fr;
-      grid-template-rows: 1fr 4fr 4fr;
-  padding: 5%;
-}
-
-.premiereleague-page .title {
-  color: #e4e4e4;
-  font-size: 72px;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.premiereleague-page .trending {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 12fr;
-      grid-template-rows: 1fr 12fr;
-}
-
-.premiereleague-page .trending .trending-and-add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.premiereleague-page .trending .trending-and-add #trending-add-card-button {
-  background-color: #570202;
-  color: #ffd9d9;
-  font-size: 36px;
-  font-weight: 700;
-  border: 2px solid #ffd9d9;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.premiereleague-page .trending .trending-and-add #trending-add-card-button:hover {
-  background-color: #ffd9d9;
-  color: #570202;
-  border: 2px solid #570202;
-  cursor: pointer;
-}
-
-.premiereleague-page .trending .trending-title {
-  font-size: 40px;
-  color: #e4e4e4;
-  padding-left: 20px;
-}
-
-.premiereleague-page .trending .trending-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[100];
-      grid-template-columns: repeat(100, 1fr);
-}
-
-.premiereleague-page .trending .trending-cards .card {
-  width: 400px;
-  border: 2px solid #ffd9d9;
-  background-color: #570202;
-  margin: 20px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-.premiereleague-page .trending .trending-cards .card:hover {
-  cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  background-color: #ae0e00;
-}
-
-.premiereleague-page .trending .trending-cards .card a {
-  text-decoration: none;
-}
-
-.premiereleague-page .trending .trending-cards .card .card-picture {
-  width: 400px;
-  height: 200px;
-  background-color: #cecece;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.premiereleague-page .trending .trending-cards .card .card-title {
-  font-size: 30px;
-  color: #e4e4e4;
-  padding: 2px;
-  border-top: solid 2px #ffd9d9;
-}
-
-.premiereleague-page .trending .trending-cards .card .card-time {
-  font-size: 12px;
-  font-weight: 600;
-  color: #e4e4e4;
-  margin: 0px 2px 2px 2px;
-  padding-left: 2px;
-}
-
-.premiereleague-page .trending .trending-cards .card .card-description {
-  color: #e4e4e4;
-  margin: 8px 2px 2px 2px;
-  padding: 2px;
-  height: 250px;
-}
-
-.premiereleague-page .all {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 12fr;
-      grid-template-rows: 1fr 12fr;
-  margin-top: 40px;
-}
-
-.premiereleague-page .all .all-and-add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.premiereleague-page .all .all-and-add #all-add-card-button {
-  background-color: #570202;
-  color: #ffd9d9;
-  font-size: 36px;
-  font-weight: 700;
-  border: 2px solid #ffd9d9;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.premiereleague-page .all .all-and-add #all-add-card-button:hover {
-  background-color: #ffd9d9;
-  color: #570202;
-  border: 2px solid #570202;
-  cursor: pointer;
-}
-
-.premiereleague-page .all .all-title {
-  font-size: 40px;
-  color: #e4e4e4;
-  padding-left: 20px;
-}
-
-.premiereleague-page .all .all-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[100];
-      grid-template-columns: repeat(100, 1fr);
-}
-
-.premiereleague-page .all .all-cards .card {
-  width: 400px;
-  border: 2px solid #ffd9d9;
-  background-color: #570202;
-  margin: 20px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-.premiereleague-page .all .all-cards .card:hover {
-  cursor: pointer;
-  background-color: #ae0e00;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-
-.premiereleague-page .all .all-cards .card .card-picture {
-  width: 400px;
-  height: 200px;
-  background-color: #cecece;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.premiereleague-page .all .all-cards .card .card-title {
-  font-size: 30px;
-  color: #e4e4e4;
-  padding: 2px;
-  border-top: solid 2px #ffd9d9;
-}
-
-.premiereleague-page .all .all-cards .card .card-time {
-  font-size: 12px;
-  font-weight: 600;
-  color: #e4e4e4;
-  margin: 0px 2px 2px 2px;
-  padding-left: 2px;
-}
-
-.premiereleague-page .all .all-cards .card .card-description {
-  color: #e4e4e4;
-  margin: 8px 2px 2px 2px;
-  padding: 2px;
-  height: 250px;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,30 +617,11 @@ body {
           flex-direction: column;
 }
 
-.footer .go-back-button {
-  background-color: #D89D9D;
-  color: #ffd9d9;
-  border: 2px solid #ffd9d9;
-  font-size: 20px;
-  border-radius: 6px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-}
-
-.footer .go-back-button:hover {
-  cursor: pointer;
-  background-color: #ffd9d9;
-  border: 2px solid #D89D9D;
-  color: #D89D9D;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-}
-
 .footer div {
   margin: 10px;
   font-size: 20px;
   font-weight: 600;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 .navbar {
@@ -882,13 +638,13 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 20px;
-  background-color: #231546;
-  border-bottom: 2px solid #dad6d6;
+  background-color: #180e2f;
+  border-bottom: 2px solid #8c799e;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #dad6d6;
+  color: #8c799e;
 }
 
 .navbar #hamburger {
@@ -902,22 +658,22 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
-  background-color: #231546;
-  color: #dad6d6;
-  border: 2px solid #dad6d6;
+  background-color: #180e2f;
+  color: #8c799e;
+  border: 2px solid #8c799e;
   border-radius: 5px;
 }
 
 .navbar #hamburger:hover {
-  background-color: #dad6d6;
-  color: #231546;
+  background-color: #8c799e;
+  color: #180e2f;
   cursor: pointer;
 }
 
 .navbar .title {
   font-size: 48px;
   font-weight: 600;
-  color: #dad6d6;
+  color: #8c799e;
   padding-left: 30px;
 }
 
@@ -932,26 +688,26 @@ body {
   margin: 0;
   color: #050404;
   width: 200px;
-  border-right: 2px solid #dad6d6;
-  border-bottom: 2px solid #dad6d6;
+  border-right: 2px solid #8c799e;
+  border-bottom: 2px solid #8c799e;
 }
 
 #navbar-side ul a {
   text-decoration: none;
-  color: #dad6d6;
+  color: #8c799e;
 }
 
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #231546;
+  background-color: #180e2f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  background-color: #231546;
-  color: #dad6d6;
+  background-color: #180e2f;
+  color: #8c799e;
 }
 
 #navbar-side ul li .navbar-icons {
@@ -966,8 +722,8 @@ body {
 }
 
 #navbar-side ul li:hover {
-  background-color: #dad6d6;
-  color: #231546;
+  background-color: #8c799e;
+  color: #180e2f;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -996,11 +752,11 @@ body {
 }
 
 .thought-list-page .thought-list .card {
-  background-color: #570606;
-  color: #fff0f0;
+  background-color: #280234;
+  color: #8c799e;
   margin: 20px;
   height: 300px 1000px;
-  border: 2px solid #fff0f0;
+  border: 2px solid #8c799e;
   padding: 10px;
   font-size: 12px;
   display: -webkit-box;
@@ -1027,8 +783,8 @@ body {
 }
 
 .thought-list-page .thought-list .card a {
-  background-color: #141212;
-  color: #fff0f0;
+  background-color: #180e2f;
+  color: #8c799e;
   padding: 10px;
 }
 
@@ -1039,7 +795,7 @@ body {
 .comments .comment-title {
   font-size: 24px;
   font-weight: 600;
-  color: #ffd9d9;
+  color: #8c799e;
   margin-bottom: 10px;
 }
 
@@ -1048,14 +804,14 @@ body {
 }
 
 .comments .comment-form .character-count p {
-  color: #ffd9d9;
+  color: #8c799e;
   font-size: 12px;
 }
 
 .comments .comment-form .add-comment-button {
-  background-color: #570606;
-  color: #ffd9d9;
-  border: 2px solid #ffd9d9;
+  background-color: #280234;
+  color: #8c799e;
+  border: 2px solid #8c799e;
   padding: 5px;
   border-radius: 5px;
   -webkit-transition: .1s ease-in-out;
@@ -1063,8 +819,8 @@ body {
 }
 
 .comments .comment-form .add-comment-button:hover {
-  background-color: #ffd9d9;
-  color: #570606;
+  background-color: #8c799e;
+  color: #280234;
   cursor: pointer;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
@@ -1075,7 +831,7 @@ body {
 }
 
 .comments-section {
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   margin: 20px;
 }
 
@@ -1083,7 +839,7 @@ body {
   margin: 20px;
   font-size: 18px;
   font-weight: 600;
-  color: #ffd9d9;
+  color: #8c799e;
   padding-top: 10px;
 }
 
@@ -1092,19 +848,19 @@ body {
 }
 
 .comments-section .comments .comment-card {
-  background-color: #570606;
-  border: solid 2px #ffd9d9;
+  background-color: #280234;
+  border: solid 2px #8c799e;
   padding: 10px;
 }
 
 .comments-section .comments .comment-card .card-header {
   font-weight: bold;
   font-size: 14px;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 .comments-section .comments .comment-card .card-body {
-  color: #ffd9d9;
+  color: #8c799e;
   font-size: 14px;
   margin: 15px;
 }
@@ -1112,21 +868,21 @@ body {
 .comments-section .comments .comment-card .comment-time {
   font-weight: bold;
   font-size: 12px;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 .comment-page .title {
   font-size: 24px;
   font-weight: bold;
   margin: 20px;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 .comment-page .post {
-  background-color: #570606;
+  background-color: #280234;
   margin: 20px;
-  color: #ffd9d9;
-  border: 2px solid #ffd9d9;
+  color: #8c799e;
+  border: 2px solid #8c799e;
   padding: 10px;
 }
 
@@ -1143,11 +899,11 @@ body {
 }
 
 .show-add-box #show-add {
-  background-color: #570606;
+  background-color: #280234;
   width: 200px;
-  color: #ffd9d9;
+  color: #8c799e;
   padding: 10px;
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   border-radius: 10px;
   margin-bottom: 20px;
   display: -webkit-box;
@@ -1166,15 +922,15 @@ body {
 }
 
 #summary-box {
-  background-color: #570606;
+  background-color: #280234;
   padding: 10px;
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
 }
 
 #summary-box .summary-title {
   font-size: 20px;
   font-weight: bold;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 #summary-box .summary-text-box .summary-text {
@@ -1184,27 +940,27 @@ body {
 
 #summary-box .summary-text-box .character-count {
   font-size: 12px;
-  color: #ffd9d9;
+  color: #8c799e;
 }
 
 #summary-box .summary-text-box .add-summary-button {
-  background-color: #ffd9d9;
-  color: #570606;
+  background-color: #8c799e;
+  color: #280234;
   font-weight: bold;
   border: none;
   padding: 8px;
   border-radius: 10px;
   margin: 10px 0px;
-  border: 2px solid #ffd9d9;
+  border: 2px solid #8c799e;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
 #summary-box .summary-text-box .add-summary-button:hover {
   cursor: pointer;
-  background-color: #570606;
-  color: #ffd9d9;
-  border: 2px solid #ffd9d9;
+  background-color: #280234;
+  color: #8c799e;
+  border: 2px solid #8c799e;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }

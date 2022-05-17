@@ -1,10 +1,3 @@
-$navbar: #e13939;
-$outline: #ffd9d9;
-$backgroundMain: #570606;
-$titleColor: #050404;
-$backButton: #D89D9D;
-
-
 @mixin flexCenter {
     display: flex;
     align-items: center;
@@ -14,21 +7,6 @@ $backButton: #D89D9D;
 .footer {
     @include flexCenter();
     flex-direction: column;
-    .go-back-button {
-        background-color: $backButton;
-        color: $outline;
-        border: 2px solid $outline;
-        font-size: 20px;
-        border-radius: 6px;
-        transition: .1s ease-in-out;
-        &:hover {
-            cursor: pointer;
-            background-color: $outline;
-            border: 2px solid $backButton;
-            color: $backButton;
-            transition: .1s ease-in-out;
-        }
-    }
     div {
         margin: 10px;
         font-size: 20px;

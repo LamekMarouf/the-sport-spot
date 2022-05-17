@@ -1,8 +1,20 @@
+$navbar: #180e2f;
+$outline: #8c799e;
+$backgroundMain: #280234;
+$titleColor: #050404;
+$textColor: #ffffff;
+$pictureOne: radial-gradient(rgb(34, 23, 61), rgb(16, 16, 16));
+$pictureTwo: radial-gradient(rgb(34, 23, 61), rgb(16, 16, 16));
+$loginSignup: #222222;
+$hoverColor: #121212;
+$backgroundGradient: linear-gradient(to bottom right, rgb(20, 20, 21), rgb(34, 23, 61));
+$navbarGradient: linear-gradient(to bottom, rgb(25, 25, 29), rgb(34, 23, 61));
+
+
 @import "./homepage";
 @import "./login";
 @import "./signup";
 @import "./footballPage";
-@import "./premiereLeaguePage";
 @import "./footer";
 @import "./header";
 @import "./cardPage";

@@ -25,28 +25,41 @@ function Homepage() {
         </div>
         <div className="picture-two">
           <Link to="/notfound">
-            <div className="text">MLB</div>
+          <div className="picture-text">
+              <div className="text">MLB</div>
+              <div id="caption">
+                Get the latest up-to-date news for the worlds's most popular
+                sport. From the premiere league to La Liga to the A-League.
+              </div>
+            </div>
             <img src={mlbLogo} alt="MLB Logo" className="logo"></img>
           </Link>
         </div>
-        <Link to="/notfound">
-          <div className="picture-one">
+        <div className="picture-one">
+          <Link to="/footballpage">
             <img src={nbaLogo} alt="NBA Logo" className="logo"></img>
-            <div className="text">NBA</div>
-          </div>
-        </Link>
+            <div className="picture-text">
+              <div className="text">NBA</div>
+              <div id="caption">
+                Get the latest up-to-date news for the worlds's most popular
+                sport. From the premiere league to La Liga to the A-League.
+              </div>
+            </div>
+          </Link>
+        </div>
 
-        <Link to="/notfound">
-          <div className="picture-two">
-            <div className="text">Esports</div>
-            <img
-              src={esportsLogo}
-              alt="Esports Logo"
-              className="logo"
-              id="esports-logo"
-            ></img>
-          </div>
-        </Link>
+        <div className="picture-two">
+          <Link to="/notfound">
+          <div className="picture-text">
+              <div className="text">Esports</div>
+              <div id="caption">
+                Get the latest up-to-date news for the worlds's most popular
+                sport. From the premiere league to La Liga to the A-League.
+              </div>
+            </div>
+            <img src={esportsLogo} alt="Esports Logo" className="logo"></img>
+          </Link>
+        </div>
       </section>
       <Outlet />
     </>
