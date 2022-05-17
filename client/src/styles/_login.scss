@@ -4,14 +4,19 @@
     justify-content: center;
 }
 
+
 .login-page {
     @include flexCenter();
     flex-direction: column;
+    height: 713px;
 
     .main-title {
         font-size: 108px;
         font-weight: 700;
         color: $outline;
+        #sport-spot-logo {
+            height: 300px;
+        }
     }
     .login-box {
         @include flexCenter();

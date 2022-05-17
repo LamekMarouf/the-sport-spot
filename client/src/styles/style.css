@@ -186,12 +186,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 713px;
 }
 
 .login-page .main-title {
   font-size: 108px;
   font-weight: 700;
   color: #8c799e;
+}
+
+.login-page .main-title #sport-spot-logo {
+  height: 300px;
 }
 
 .login-page .login-box {
@@ -363,12 +368,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 712px;
 }
 
 .signup-page .main-title {
   font-size: 108px;
   font-weight: 700;
   color: #8c799e;
+}
+
+.signup-page .main-title #sport-spot-logo {
+  height: 300px;
 }
 
 .signup-page .signup-box {
@@ -688,7 +698,6 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 20px;
   background-color: #180e2f;
   border-bottom: 2px solid #8c799e;
 }
@@ -696,6 +705,12 @@ body {
 .navbar a {
   text-decoration: none;
   color: #8c799e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar #hamburger {
@@ -713,6 +728,7 @@ body {
   color: #8c799e;
   border: 2px solid #8c799e;
   border-radius: 5px;
+  margin: 10px 0px 10px 10px;
 }
 
 .navbar #hamburger:hover {
@@ -724,8 +740,14 @@ body {
 .navbar .title {
   font-size: 48px;
   font-weight: 600;
-  color: #8c799e;
-  padding-left: 30px;
+  color: #ffffff;
+}
+
+.navbar .sport-spot-logo {
+  height: 70px;
+  margin-left: 20px;
+  padding: 10px 10px 10px 20px;
+  border-left: 2px solid #8c799e;
 }
 
 #navbar-side {

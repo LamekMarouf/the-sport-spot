@@ -3,8 +3,7 @@ import SyncLoader from "react-spinners/SyncLoader";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import sportSpotLogo from "../assets/images/sport-spot-logo.png";
 
 import Auth from "../utils/auth";
 
@@ -65,9 +64,14 @@ const Login = (props) => {
         </div>
       ) : (
         <>
-          <Header />
           <main className="login-page">
-            <div className="main-title">SPORT SPOT</div>
+            <div className="main-title">
+              <img
+                src={sportSpotLogo}
+                alt="Sport Spot Logo"
+                id="sport-spot-logo"
+              ></img>
+            </div>
             <div className="login-box">
               <div className="title">Login</div>
               <div>
@@ -115,10 +119,8 @@ const Login = (props) => {
               </div>
             </div>
           </main>
-          <Footer />
         </>
       )}
-      ;
     </>
   );
 };

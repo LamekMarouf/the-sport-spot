@@ -1,9 +1,10 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import { BiMenuAltLeft, BiCategoryAlt } from "react-icons/bi";
+import { BiMenuAltLeft } from "react-icons/bi";
 import { RiHome4Line } from "react-icons/ri";
 import { BsCreditCard2Front } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
+import sportSpotLogo from "../../assets/images/sport-spot-logo.png"
 
 import Auth from "../../utils/auth";
 
@@ -27,7 +28,8 @@ const Header = () => {
 
         <div>
           <Link className="title-link" to="/">
-            <div className="title">Sports Spot</div>
+            <img src={sportSpotLogo} alt="Sport Spot Logo" className="sport-spot-logo"></img>
+            <div className="title">Sport Spot</div>
           </Link>
         </div>
       </header>

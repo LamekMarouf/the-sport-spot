@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SyncLoader from "react-spinners/SyncLoader";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
+import sportSpotLogo from "../assets/images/sport-spot-logo.png";
 
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
@@ -63,9 +63,14 @@ const Signup = () => {
         </div>
       ) : (
         <>
-          <Header />
           <main className="signup-page">
-            <div className="main-title">SPORT SPOT</div>
+            <div className="main-title">
+              <img
+                src={sportSpotLogo}
+                alt="Sport Spot Logo"
+                id="sport-spot-logo"
+              ></img>
+            </div>
             <div className="signup-box">
               <div className="title">Sign Up</div>
               {data ? (
@@ -131,7 +136,6 @@ const Signup = () => {
           <Footer />
         </>
       )}
-      ;
     </>
   );
 };

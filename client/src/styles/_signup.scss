@@ -16,11 +16,15 @@ body {
 .signup-page {
     @include flexCenter();
     flex-direction: column;
+    height: 712px;
 
     .main-title {
         font-size: 108px;
         font-weight: 700;
         color: $outline;
+        #sport-spot-logo {
+            height: 300px
+        }
     }
     .signup-box {
         @include flexCenter();

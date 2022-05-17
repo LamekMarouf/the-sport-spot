@@ -7,12 +7,13 @@
 .navbar {
     @include flexCenter();
     justify-content: flex-start;
-    padding: 20px;
     background-color: $navbar;
     border-bottom: 2px solid $outline;
     a {
         text-decoration: none;
         color: $outline;
+        display: flex;
+        align-items: center
     }
     #hamburger {
         @include flexCenter();
@@ -22,6 +23,7 @@
         color: $outline;
         border: 2px solid $outline;
         border-radius: 5px;
+        margin: 10px 0px 10px 10px;
         &:hover {
             background-color: $outline;
             color: $navbar;
@@ -31,8 +33,13 @@
     .title {
         font-size: 48px;
         font-weight: 600;
-        color: $outline;
-        padding-left: 30px;
+        color: $textColor;
+    }
+    .sport-spot-logo {
+        height: 70px;
+        margin-left: 20px;
+        padding: 10px 10px 10px 20px;
+        border-left: 2px solid $outline;
     }
 }
 
