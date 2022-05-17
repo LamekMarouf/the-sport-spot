@@ -21,9 +21,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 300px;
-  padding: 50px 200px;
-  background-image: radial-gradient(#22173d, #101010);
+  padding: 20px 100px;
+  margin: 20px 20px;
 }
 
 .homepage .picture-one a {
@@ -39,7 +42,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 800px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
+  background-image: linear-gradient(to bottom right, #19191d, #22173d);
+  padding: 30px;
+  width: 1000px;
+  border: 5px solid #8c799e;
 }
 
 .homepage .picture-one a:hover {
@@ -52,8 +59,6 @@
 
 .homepage .picture-one a:hover .picture-text #caption {
   display: block;
-  -webkit-transition: .9s ease-in-out;
-  transition: .9s ease-in-out;
   text-decoration: none;
 }
 
@@ -61,15 +66,14 @@
   width: 450px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  row-gap: 10px;
 }
 
 .homepage .picture-one .picture-text #caption {
   color: white;
   display: none;
-  -webkit-transition: .9s ease-in-out;
-  transition: .9s ease-in-out;
 }
 
 .homepage .picture-two {
@@ -82,9 +86,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 300px;
-  padding: 50px 200px;
-  background-image: radial-gradient(#22173d, #101010);
+  padding: 70px 100px;
+  margin: 20px 20px;
 }
 
 .homepage .picture-two a {
@@ -100,7 +107,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 800px;
+  padding: 30px;
+  width: 1000px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
+  background-image: linear-gradient(to bottom right, #19191d, #22173d);
+  border: 5px solid #8c799e;
 }
 
 .homepage .picture-two a:hover {
@@ -113,8 +124,6 @@
 
 .homepage .picture-two a:hover .picture-text #caption {
   display: block;
-  -webkit-transition: .9s ease-in-out;
-  transition: .9s ease-in-out;
   text-decoration: none;
 }
 
@@ -122,15 +131,14 @@
   width: 450px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  row-gap: 10px;
 }
 
 .homepage .picture-two .picture-text #caption {
   color: white;
   display: none;
-  -webkit-transition: .9s ease-in-out;
-  transition: .9s ease-in-out;
 }
 
 .homepage .text {
@@ -144,6 +152,10 @@
 
 .homepage #esports-logo {
   border-radius: 20px;
+}
+
+.homepage #mlb-logo {
+  width: 500px;
 }
 
 .login-page {
@@ -165,7 +177,7 @@
 .login-page .main-title {
   font-size: 108px;
   font-weight: 700;
-  color: #050404;
+  color: #8c799e;
 }
 
 .login-page .login-box {
@@ -188,7 +200,7 @@
 .login-page .login-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #222222;
+  color: #8c799e;
 }
 
 .login-page .login-box .no-account {
@@ -233,22 +245,23 @@
   height: 30px;
   width: 300px;
   background-color: #222222;
+  color: #ffffff;
 }
 
 .login-page .login-form .email-text ::-webkit-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form .email-text :-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form .email-text ::-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form .email-text ::placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form .password-text {
@@ -258,22 +271,23 @@
   height: 30px;
   width: 300px;
   background-color: #222222;
+  color: #ffffff;
 }
 
 .login-page .login-form ::-webkit-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form :-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form ::-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-page .login-form ::placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .login-button {
@@ -287,6 +301,7 @@
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
+  border: 2px solid #8c799e;
 }
 
 .login-button:hover {
@@ -297,13 +312,14 @@
   transition: .1s ease-in-out;
 }
 
-body {
+html, body {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#141415), to(#22173d));
   background-image: linear-gradient(to bottom right, #141415, #22173d);
   z-index: -1;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 .signup-page {
@@ -325,7 +341,7 @@ body {
 .signup-page .main-title {
   font-size: 108px;
   font-weight: 700;
-  color: #050404;
+  color: #8c799e;
 }
 
 .signup-page .signup-box {
@@ -347,7 +363,7 @@ body {
 .signup-page .signup-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #222222;
+  color: #8c799e;
 }
 
 .signup-page .signup-box .have-account {
@@ -367,6 +383,10 @@ body {
 .signup-page .signup-box .have-account a {
   color: #8c799e;
   margin-left: 5px;
+}
+
+.signup-page .signup-box .error-message {
+  color: #ffffff;
 }
 
 .signup-information {
@@ -405,6 +425,7 @@ body {
   height: 30px;
   width: 300px;
   background-color: #222222;
+  color: #ffffff;
 }
 
 .signup-information .signup-form .username-box ::-webkit-input-placeholder {
@@ -430,6 +451,7 @@ body {
   height: 30px;
   width: 300px;
   background-color: #222222;
+  color: #ffffff;
 }
 
 .signup-information .signup-form .email-box ::-webkit-input-placeholder {
@@ -455,6 +477,7 @@ body {
   height: 30px;
   width: 300px;
   background-color: #222222;
+  color: #ffffff;
 }
 
 .signup-information .signup-form .password-box ::-webkit-input-placeholder {
@@ -484,6 +507,7 @@ body {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
+  border: 2px solid #8c799e;
 }
 
 .signup-button:hover {
@@ -741,6 +765,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin: 40px 0px 0px 20px;
+  color: #8c799e;
 }
 
 .thought-list-page .thought-list {
@@ -753,7 +778,7 @@ body {
 
 .thought-list-page .thought-list .card {
   background-color: #280234;
-  color: #8c799e;
+  color: #ffffff;
   margin: 20px;
   height: 300px 1000px;
   border: 2px solid #8c799e;
@@ -784,7 +809,10 @@ body {
 
 .thought-list-page .thought-list .card a {
   background-color: #180e2f;
-  color: #8c799e;
+  border: 2px solid #8c799e;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
   padding: 10px;
 }
 
@@ -828,6 +856,7 @@ body {
 
 .no-comments {
   margin: 20px;
+  color: #ffffff;
 }
 
 .comments-section {
@@ -906,6 +935,8 @@ body {
   border: 2px solid #8c799e;
   border-radius: 10px;
   margin-bottom: 20px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,12 +950,17 @@ body {
 
 .show-add-box #show-add:hover {
   cursor: pointer;
+  background-color: #8c799e;
+  color: #280234;
+  border: 2px solid #280234;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 #summary-box {
   background-color: #280234;
   padding: 10px;
-  border: 2px solid #8c799e;
+  border: 2px solid #280234;
 }
 
 #summary-box .summary-title {
@@ -963,6 +999,15 @@ body {
   border: 2px solid #8c799e;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+}
+
+#summary-box .not-logged-in {
+  color: #ffffff;
+}
+
+#summary-box .not-logged-in a {
+  color: #8c799e;
+  text-decoration: none;
 }
 
 .hidden {

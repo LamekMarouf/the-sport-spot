@@ -8,11 +8,16 @@
         border: 2px solid $outline;
         border-radius: 10px;
         margin-bottom: 20px;
+        transition: .2s ease;
     
         @include flexCenter();
 
         &:hover {
             cursor: pointer;
+            background-color: $outline;
+            color: $backgroundMain;
+            border: 2px solid $backgroundMain;
+            transition: .2s ease;
         }
     }
 }
@@ -20,7 +25,7 @@
 #summary-box {
     background-color: $backgroundMain;
     padding: 10px;
-    border: 2px solid $outline;
+    border: 2px solid $backgroundMain;
     .summary-title {
         font-size: 20px;
         font-weight: bold;
@@ -52,6 +57,13 @@
                 border: 2px solid $outline;
                 transition: .1s ease-in-out;
             }
+        }
+    }
+    .not-logged-in {
+        color: $textColor;
+        a {
+            color: $outline;
+            text-decoration: none;
         }
     }
 }

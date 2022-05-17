@@ -7,9 +7,6 @@ import mlsLogo from "../assets/images/mls-logo.png";
 import premiereLeagueLogo from "../assets/images/premier-league-logo.png";
 import serieALogo from "../assets/images/seriea-logo.png";
 
-// Add a nice animation for hovering over logos
-// Fix links (link sizes are too small)
-
 function FootballPage() {
   return (
     <>

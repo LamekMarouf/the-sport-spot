@@ -3,6 +3,7 @@
         font-size: 30px;
         font-weight: 700;
         margin: 40px 0px 0px 20px;
+        color: $outline;
     }
     .thought-list {
         display: grid;
@@ -10,7 +11,7 @@
         font-size: 12px;
         .card {
             background-color: $backgroundMain;
-            color: $outline;
+            color: $textColor;
             margin: 20px;
             height: min(300px) max(1000px);
             border: 2px solid $outline;
@@ -25,7 +26,10 @@
             }
             a {
                 background-color: $navbar;
-                color: $outline;
+                border: 2px solid $outline;
+                border-radius: 5px;
+                color: $textColor;
+                text-decoration: none;
                 padding: 10px;
             }
         }

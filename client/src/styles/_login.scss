@@ -1,11 +1,8 @@
-// Change font of title to a more special one
-
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .login-page {
     @include flexCenter();
@@ -14,7 +11,7 @@
     .main-title {
         font-size: 108px;
         font-weight: 700;
-        color: $titleColor;
+        color: $outline;
     }
     .login-box {
         @include flexCenter();
@@ -23,7 +20,7 @@
         .title {
             font-size: 26px;
             font-weight: 600;
-            color: $loginSignup;
+            color: $outline;
         }
         .no-account {
             @include flexCenter();
@@ -45,8 +42,9 @@
                     height: 30px;
                     width: 300px;
                     background-color: $loginSignup;
+                    color: $textColor;
                 ::placeholder {
-                    color: white;
+                    color: $textColor;
                 }
             }
             .password-text {
@@ -56,9 +54,10 @@
                 height: 30px;
                 width: 300px;
                 background-color: $loginSignup;
+                color: $textColor;
             }
             ::placeholder {
-                color: white;
+                color: $textColor;
             }
 
             }
@@ -74,6 +73,7 @@
             color: $outline;
             transition: .1s ease-in-out;
             margin: 5px;
+            border: 2px solid $outline;
             &:hover {
                 cursor: pointer;
                 background-color: $outline;

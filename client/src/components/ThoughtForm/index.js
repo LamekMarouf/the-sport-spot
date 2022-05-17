@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 
 import { ADD_THOUGHT } from "../../utils/mutations";
-import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
+import { QUERY_THOUGHTS } from "../../utils/queries";
 
 import Auth from "../../utils/auth";
 
@@ -66,9 +66,10 @@ const ThoughtForm = () => {
         </div>
       </div>
       <div id="summary-box" className="hidden">
-        <div className="summary-title">Add a summary</div>
         {Auth.loggedIn() ? (
           <>
+                  <div className="summary-title">Add a summary</div>
+
             <form onSubmit={handleFormSubmit} className="summary-text-box">
               <div>
                 <textarea
@@ -92,10 +93,10 @@ const ThoughtForm = () => {
             </form>
           </>
         ) : (
-          <p>
+          <div className="not-logged-in">
             You need to be logged in to share your thoughts. Please{" "}
             <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-          </p>
+          </div>
         )}
       </div>
     </>

@@ -81,7 +81,7 @@ const Signup = () => {
                 />
               </div>
               <button className="signup-button" type="submit">
-                Submit
+                Sign Up
               </button>
             </form>
           </div>
@@ -94,7 +94,10 @@ const Signup = () => {
         </section>
 
         {error && (
-          <div className="my-3 p-3 bg-danger text-white">{error.message}</div>
+          <div className="error-message">
+            Make sure all information entered is correct, and that password
+            entered is longer than 4 characters.
+          </div>
         )}
       </div>
     </main>

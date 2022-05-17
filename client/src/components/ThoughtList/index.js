@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ThoughtList = ({ thoughts, title, showTitle = true }) => {
-  if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
-  }
-
   return (
     <div className="thought-list-page">
       {showTitle && <div className="title">{title}</div>}
@@ -14,9 +10,7 @@ const ThoughtList = ({ thoughts, title, showTitle = true }) => {
           thoughts.map((thought) => (
             <div key={thought._id} className="card">
               <p className="thought-text">{thought.thoughtText}</p>
-              <Link to={`/thoughts/${thought._id}`}>
-                Comments
-              </Link>
+              <Link to={`/thoughts/${thought._id}`}>Comments</Link>
             </div>
           ))}
       </div>
