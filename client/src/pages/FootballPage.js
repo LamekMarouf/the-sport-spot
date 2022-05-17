@@ -20,6 +20,36 @@ function FootballPage() {
     }, 1000);
   }, []);
 
+  const showHoverText = () => {
+    const hoverText = document.getElementById("hover-text");
+    hoverText.classList.toggle("hidden");
+  };
+
+  const showHoverTextTwo = () => {
+    const hoverText = document.getElementById("hover-text-two");
+    hoverText.classList.toggle("hidden");
+  };
+
+  const showHoverTextThree = () => {
+    const hoverText = document.getElementById("hover-text-three");
+    hoverText.classList.toggle("hidden");
+  };
+
+  const showHoverTextFour = () => {
+    const hoverText = document.getElementById("hover-text-four");
+    hoverText.classList.toggle("hidden");
+  };
+
+  const showHoverTextFive = () => {
+    const hoverText = document.getElementById("hover-text-five");
+    hoverText.classList.toggle("hidden");
+  };
+
+  const showHoverTextSix = () => {
+    const hoverText = document.getElementById("hover-text-six");
+    hoverText.classList.toggle("hidden");
+  };
+
   return (
     <>
       {loading ? (
@@ -46,6 +76,14 @@ function FootballPage() {
                     className="logo"
                     id="premiereleague-logo"
                   ></img>
+                  <div
+                    id="hover-text"
+                    className="hidden"
+                    onMouseOver={showHoverText}
+                    onMouseLeave={showHoverText}
+                  >
+                    Premiere League
+                  </div>
                 </Link>
               </div>
 
@@ -57,6 +95,14 @@ function FootballPage() {
                     className="logo"
                     id="laliga-logo"
                   ></img>
+                  <div
+                    id="hover-text-two"
+                    className="hidden"
+                    onMouseOver={showHoverTextTwo}
+                    onMouseLeave={showHoverTextTwo}
+                  >
+                    La Liga
+                  </div>
                 </Link>
               </div>
               <div className="pictures">
@@ -67,6 +113,14 @@ function FootballPage() {
                     className="logo"
                     id="bundesliga-logo"
                   ></img>
+                  <div
+                    id="hover-text-three"
+                    className="hidden"
+                    onMouseOver={showHoverTextThree}
+                    onMouseLeave={showHoverTextThree}
+                  >
+                    Bundesliga
+                  </div>
                 </Link>
               </div>
             </div>
@@ -79,6 +133,14 @@ function FootballPage() {
                     className="logo"
                     id="ligueone-logo"
                   ></img>
+                  <div
+                    id="hover-text-four"
+                    className="hidden"
+                    onMouseOver={showHoverTextFour}
+                    onMouseLeave={showHoverTextFour}
+                  >
+                    Ligue One
+                  </div>
                 </Link>
               </div>
               <div className="pictures">
@@ -89,6 +151,14 @@ function FootballPage() {
                     className="logo"
                     id="seriea-logo"
                   ></img>
+                  <div
+                    id="hover-text-five"
+                    className="hidden"
+                    onMouseOver={showHoverTextFive}
+                    onMouseLeave={showHoverTextFive}
+                  >
+                    Serie A
+                  </div>
                 </Link>
               </div>
               <div className="pictures">
@@ -99,6 +169,14 @@ function FootballPage() {
                     className="logo"
                     id="mls-logo"
                   ></img>
+                  <div
+                    id="hover-text-six"
+                    className="hidden"
+                    onMouseOver={showHoverTextSix}
+                    onMouseLeave={showHoverTextSix}
+                  >
+                    MLS
+                  </div>
                 </Link>
               </div>
             </div>

@@ -1,0 +1,10 @@
+.not-found-page {
+    position: absolute;
+    @include flexCenter();
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    background-image: $backgroundGradient;
+    color: $outline;
+    font-weight: 600;
+}

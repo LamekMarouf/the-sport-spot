@@ -13,9 +13,10 @@ import CardPage from "./pages/CardPage";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import FootballPage from "./pages/FootballPage";
+import NotFound from "./pages/NotFound";
 
 import SingleThought from "./pages/SingleThought";
-import './styles/style.css';
+import "./styles/style.css";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -45,14 +46,15 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/footballpage" element={<FootballPage />} />
-              <Route path="/home" element={<CardPage />} />
-              <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
-            </Routes>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/footballpage" element={<FootballPage />} />
+          <Route path="/home" element={<CardPage />} />
+          <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
+          <Route path="/notfound" element={<NotFound />} />
+        </Routes>
       </Router>
     </ApolloProvider>
   );
