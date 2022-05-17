@@ -31,6 +31,14 @@
                 color: $textColor;
                 text-decoration: none;
                 padding: 10px;
+                transition: .2s ease;
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid $navbar;
+                    background-color: $outline;
+                    color: $navbar;
+                    transition: .2s ease;
+                }
             }
         }
     }

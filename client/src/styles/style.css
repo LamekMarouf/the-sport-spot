@@ -841,6 +841,17 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.thought-list-page .thought-list .card a:hover {
+  cursor: pointer;
+  border: 2px solid #180e2f;
+  background-color: #8c799e;
+  color: #180e2f;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 .comments {
@@ -861,6 +872,15 @@ body {
 .comments .comment-form .character-count p {
   color: #8c799e;
   font-size: 12px;
+}
+
+.comments .comment-form .character-count p .error-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .comments .comment-form .add-comment-button {

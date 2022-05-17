@@ -22,6 +22,10 @@
             p {
                 color: $outline;
                 font-size: 12px;
+                .error-message {
+                    display: flex;
+                    justify-content: flex-end;
+                }
             }
         }
         .add-comment-button {

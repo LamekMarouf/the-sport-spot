@@ -10,7 +10,7 @@ const ThoughtList = ({ thoughts, title, showTitle = true }) => {
           thoughts.map((thought) => (
             <div key={thought._id} className="card">
               <p className="thought-text">{thought.thoughtText}</p>
-              <Link to={`/thoughts/${thought._id}`}>Comments</Link>
+              <Link to={`/thoughts/${thought._id}`}>See Full Post</Link>
             </div>
           ))}
       </div>

@@ -43,9 +43,7 @@ const CommentForm = ({ thoughtId }) => {
     <div className="comments">
       {Auth.loggedIn() ? (
         <>
-        <div className="comment-title">
-          Add Comment
-        </div>
+          <div className="comment-title">Add Comment</div>
           <form className="comment-form" onSubmit={handleFormSubmit}>
             <div className="comment-box">
               <textarea
@@ -63,13 +61,21 @@ const CommentForm = ({ thoughtId }) => {
                   characterCount === 280 || error ? "text-danger" : ""
                 }`}
               >
+                <div>
+                  {error && (
+                    <span className="error-message">
+                      Unable to post comment with 0 characters.
+                    </span>
+                  )}
+                </div>
                 Character Count: {characterCount}/280
-                {error && <span className="ml-2">{error.message}</span>}
               </p>
             </div>
 
-            <div >
-              <button type="submit" className="add-comment-button">Add Comment</button>
+            <div>
+              <button type="submit" className="add-comment-button">
+                Add Comment
+              </button>
             </div>
           </form>
         </>
