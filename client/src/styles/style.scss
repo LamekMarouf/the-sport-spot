@@ -42,9 +42,6 @@ $pictureGradient: linear-gradient(to bottom right, rgb(25, 25, 29), rgb(34, 23, 
 // $navbarGradient: linear-gradient(to bottom, rgb(0, 33, 42), rgb(0, 56, 83));
 // $pictureGradient: linear-gradient(to bottom, rgb(0, 33, 42), rgb(0, 56, 83));
 
-
-
-
 @import "./homepage";
 @import "./login";
 @import "./signup";
@@ -58,3 +55,4 @@ $pictureGradient: linear-gradient(to bottom right, rgb(25, 25, 29), rgb(34, 23, 
 @import "./singleThought";
 @import "./thoughtForm";
 @import "./notFound";
+@import "./settings";

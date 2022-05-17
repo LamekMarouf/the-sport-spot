@@ -14,6 +14,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import FootballPage from "./pages/FootballPage";
 import NotFound from "./pages/NotFound";
+import Settings from "./pages/Settings";
 
 import SingleThought from "./pages/SingleThought";
 import "./styles/style.css";
@@ -54,6 +55,7 @@ function App() {
           <Route path="/home" element={<CardPage />} />
           <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
           <Route path="/notfound" element={<NotFound />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>
     </ApolloProvider>

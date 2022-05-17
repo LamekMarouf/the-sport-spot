@@ -2,9 +2,9 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { RiHome4Line } from "react-icons/ri";
-import { BsCreditCard2Front } from "react-icons/bs";
+import { AiFillSetting } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import sportSpotLogo from "../../assets/images/sport-spot-logo.png"
+import sportSpotLogo from "../../assets/images/sport-spot-logo.png";
 
 import Auth from "../../utils/auth";
 
@@ -28,7 +28,11 @@ const Header = () => {
 
         <div>
           <Link className="title-link" to="/">
-            <img src={sportSpotLogo} alt="Sport Spot Logo" className="sport-spot-logo"></img>
+            <img
+              src={sportSpotLogo}
+              alt="Sport Spot Logo"
+              className="sport-spot-logo"
+            ></img>
             <div className="title">Sport Spot</div>
           </Link>
         </div>
@@ -45,12 +49,12 @@ const Header = () => {
             </li>
           </Link>
 
-          <Link to="/" onClick={displayMenu} >
+          <Link to="/settings" onClick={displayMenu}>
             <li>
               <div className="navbar-icons">
-                <BsCreditCard2Front />
+                <AiFillSetting />
               </div>
-              Subscription
+              Settings
             </li>
           </Link>
 

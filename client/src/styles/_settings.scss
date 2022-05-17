@@ -1,0 +1,15 @@
+.settings-page {
+    .title {
+        color: $textColor;
+        font-size: 36px;
+        padding: 20px;
+        @include flexCenter();
+    }
+    .options {
+        .theme {
+            font-size: 20px;
+            color: $textColor;
+            @include flexCenter();
+        }
+    }
+}
