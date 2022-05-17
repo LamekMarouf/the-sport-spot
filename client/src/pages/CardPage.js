@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
+import SyncLoader from "react-spinners/SyncLoader";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -9,21 +10,44 @@ import ThoughtForm from "../components/ThoughtForm";
 import { QUERY_THOUGHTS } from "../utils/queries";
 
 const CardPage = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
+  const { loadingTwo, data } = useQuery(QUERY_THOUGHTS);
   const thoughts = data?.thoughts || [];
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   return (
     <>
-      <Header />
-      <main className="card-page">
-        <ThoughtForm />
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          <ThoughtList thoughts={thoughts} title="All" />
-        )}
-      </main>
-      <Footer />
+      {loading ? (
+        <div className="loader">
+          <SyncLoader
+            size={10}
+            color={"#8c799e"}
+            loading={loading}
+            speedMultiplier={0.6}
+          />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <main className="card-page">
+            <ThoughtForm />
+            {loadingTwo ? (
+              <div>Loading...</div>
+            ) : (
+              <ThoughtList thoughts={thoughts} title="All" />
+            )}
+          </main>
+          <Footer />
+        </>
+      )}
+      ;
     </>
   );
 };

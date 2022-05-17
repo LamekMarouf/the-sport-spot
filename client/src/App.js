@@ -15,7 +15,6 @@ import Login from "./pages/Login";
 import FootballPage from "./pages/FootballPage";
 
 import SingleThought from "./pages/SingleThought";
-import Profile from "./pages/Profile";
 import './styles/style.css';
 
 // Construct our main GraphQL API endpoint
@@ -52,8 +51,6 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/footballpage" element={<FootballPage />} />
               <Route path="/home" element={<CardPage />} />
-              <Route path="/me" element={<Profile />} />
-              <Route path="/profiles/:username" element={<Profile />} />
               <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
             </Routes>
       </Router>
