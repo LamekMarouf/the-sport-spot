@@ -24,7 +24,7 @@
         padding: 20px 100px;
         margin: 20px 20px;
         a {
-          background-image: $pictureGradient;
+          background-color: $pictureGradient;
           padding: 30px;
           width: 1000px;
           border: 5px solid $outline;
@@ -71,7 +71,7 @@
             justify-content: center;
             padding: 30px;
             width: 1000px;  
-            background-image: $pictureGradient;
+            background-color: $pictureGradient;
             border: 5px solid $outline;
             &:hover {
                 color: $textColor;

@@ -1,5 +1,5 @@
 .loader {
-  background-color: #180e2f;
+  background-color: #161616;
   height: 710px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,11 +44,10 @@
 }
 
 .homepage .picture-one a {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
-  background-image: linear-gradient(to bottom right, #19191d, #22173d);
+  background-color: #262626;
   padding: 30px;
   width: 1000px;
-  border: 5px solid #8c799e;
+  border: 5px solid #9f9f9f;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -119,9 +118,8 @@
           justify-content: center;
   padding: 30px;
   width: 1000px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
-  background-image: linear-gradient(to bottom right, #19191d, #22173d);
-  border: 5px solid #8c799e;
+  background-color: #262626;
+  border: 5px solid #9f9f9f;
 }
 
 .homepage .picture-two a:hover {
@@ -192,7 +190,7 @@
 .login-page .main-title {
   font-size: 108px;
   font-weight: 700;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .login-page .main-title #sport-spot-logo {
@@ -219,7 +217,7 @@
 .login-page .login-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .login-page .login-box .no-account {
@@ -233,11 +231,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 40px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .login-page .login-box .no-account a {
-  color: #8c799e;
+  color: #9f9f9f;
   padding-left: 5px;
 }
 
@@ -271,7 +269,7 @@
 }
 
 .login-page .login-form .email-text {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
@@ -297,7 +295,7 @@
 }
 
 .login-page .login-form .password-text {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
@@ -329,24 +327,23 @@
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #8c799e;
+  color: #9f9f9f;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
 }
 
 .login-button:hover {
   cursor: pointer;
-  background-color: #8c799e;
+  background-color: #9f9f9f;
   color: #222222;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#141415), to(#22173d));
-  background-image: linear-gradient(to bottom right, #141415, #22173d);
+  background-color: #101010;
   z-index: -1;
   font-family: monospace;
   padding: 0;
@@ -374,7 +371,7 @@ body {
 .signup-page .main-title {
   font-size: 108px;
   font-weight: 700;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .signup-page .main-title #sport-spot-logo {
@@ -400,7 +397,7 @@ body {
 .signup-page .signup-box .title {
   font-size: 26px;
   font-weight: 600;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .signup-page .signup-box .have-account {
@@ -413,12 +410,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #8c799e;
+  color: #9f9f9f;
   margin: 40px;
 }
 
 .signup-page .signup-box .have-account a {
-  color: #8c799e;
+  color: #9f9f9f;
   margin-left: 5px;
 }
 
@@ -456,7 +453,7 @@ body {
 }
 
 .signup-information .signup-form .username-box .username-text {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
@@ -482,7 +479,7 @@ body {
 }
 
 .signup-information .signup-form .email-box .email-text {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
@@ -508,7 +505,7 @@ body {
 }
 
 .signup-information .signup-form .password-box .password-text {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 3px;
   border-radius: 10px;
   height: 30px;
@@ -540,16 +537,16 @@ body {
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #8c799e;
+  color: #9f9f9f;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   margin: 5px;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
 }
 
 .signup-button:hover {
   cursor: pointer;
-  background-color: #8c799e;
+  background-color: #9f9f9f;
   color: #222222;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
@@ -593,8 +590,8 @@ body {
 }
 
 .football-page .pictures {
-  background-color: #180e2f;
-  border: 4px solid #8c799e;
+  background-color: #161616;
+  border: 4px solid #9f9f9f;
   width: 500px;
   margin: 10px;
   background-color: white;
@@ -704,7 +701,7 @@ body {
   margin: 10px;
   font-size: 20px;
   font-weight: 600;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .navbar {
@@ -720,13 +717,13 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #180e2f;
-  border-bottom: 2px solid #8c799e;
+  background-color: #161616;
+  border-bottom: 2px solid #9f9f9f;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #8c799e;
+  color: #9f9f9f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,16 +743,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
-  background-color: #180e2f;
-  color: #8c799e;
-  border: 2px solid #8c799e;
+  background-color: #161616;
+  color: #9f9f9f;
+  border: 2px solid #9f9f9f;
   border-radius: 5px;
   margin: 10px 0px 10px 10px;
 }
 
 .navbar #hamburger:hover {
-  background-color: #8c799e;
-  color: #180e2f;
+  background-color: #9f9f9f;
+  color: #161616;
   cursor: pointer;
 }
 
@@ -769,7 +766,7 @@ body {
   height: 70px;
   margin-left: 20px;
   padding: 10px 10px 10px 20px;
-  border-left: 2px solid #8c799e;
+  border-left: 2px solid #9f9f9f;
 }
 
 #navbar-side {
@@ -783,26 +780,26 @@ body {
   margin: 0;
   color: #050404;
   width: 200px;
-  border-right: 2px solid #8c799e;
-  border-bottom: 2px solid #8c799e;
+  border-right: 2px solid #9f9f9f;
+  border-bottom: 2px solid #9f9f9f;
 }
 
 #navbar-side ul a {
   text-decoration: none;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 #navbar-side ul li {
   list-style: none;
   padding: 20px;
-  background-color: #180e2f;
+  background-color: #161616;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  background-color: #180e2f;
-  color: #8c799e;
+  background-color: #161616;
+  color: #9f9f9f;
 }
 
 #navbar-side ul li .navbar-icons {
@@ -817,8 +814,8 @@ body {
 }
 
 #navbar-side ul li:hover {
-  background-color: #8c799e;
-  color: #180e2f;
+  background-color: #9f9f9f;
+  color: #161616;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   cursor: pointer;
@@ -865,7 +862,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin: 40px 0px 0px 20px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .thought-list-page .thought-list {
@@ -877,11 +874,11 @@ body {
 }
 
 .thought-list-page .thought-list .card {
-  background-color: #280234;
+  background-color: #2e2e2e;
   color: #ffffff;
   margin: 20px;
   height: 300px 1000px;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   padding: 10px;
   font-size: 12px;
   display: -webkit-box;
@@ -908,8 +905,8 @@ body {
 }
 
 .thought-list-page .thought-list .card a {
-  background-color: #180e2f;
-  border: 2px solid #8c799e;
+  background-color: #161616;
+  border: 2px solid #9f9f9f;
   border-radius: 5px;
   color: #ffffff;
   text-decoration: none;
@@ -920,9 +917,9 @@ body {
 
 .thought-list-page .thought-list .card a:hover {
   cursor: pointer;
-  border: 2px solid #180e2f;
-  background-color: #8c799e;
-  color: #180e2f;
+  border: 2px solid #161616;
+  background-color: #9f9f9f;
+  color: #161616;
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
@@ -934,7 +931,7 @@ body {
 .comments .comment-title {
   font-size: 24px;
   font-weight: 600;
-  color: #8c799e;
+  color: #9f9f9f;
   margin-bottom: 10px;
 }
 
@@ -943,7 +940,7 @@ body {
 }
 
 .comments .comment-form .character-count p {
-  color: #8c799e;
+  color: #9f9f9f;
   font-size: 12px;
 }
 
@@ -957,9 +954,9 @@ body {
 }
 
 .comments .comment-form .add-comment-button {
-  background-color: #280234;
-  color: #8c799e;
-  border: 2px solid #8c799e;
+  background-color: #2e2e2e;
+  color: #9f9f9f;
+  border: 2px solid #9f9f9f;
   padding: 5px;
   border-radius: 5px;
   -webkit-transition: .1s ease-in-out;
@@ -967,8 +964,8 @@ body {
 }
 
 .comments .comment-form .add-comment-button:hover {
-  background-color: #8c799e;
-  color: #280234;
+  background-color: #9f9f9f;
+  color: #2e2e2e;
   cursor: pointer;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
@@ -979,7 +976,7 @@ body {
 }
 
 .comments .not-logged-in a {
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .no-comments {
@@ -988,7 +985,7 @@ body {
 }
 
 .comments-section {
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   margin: 20px;
 }
 
@@ -996,7 +993,7 @@ body {
   margin: 20px;
   font-size: 18px;
   font-weight: 600;
-  color: #8c799e;
+  color: #9f9f9f;
   padding-top: 10px;
 }
 
@@ -1005,15 +1002,15 @@ body {
 }
 
 .comments-section .comments .comment-card {
-  background-color: #280234;
-  border: solid 2px #8c799e;
+  background-color: #2e2e2e;
+  border: solid 2px #9f9f9f;
   padding: 10px;
 }
 
 .comments-section .comments .comment-card .card-header {
   font-weight: bold;
   font-size: 14px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .comments-section .comments .comment-card .card-body {
@@ -1025,21 +1022,21 @@ body {
 .comments-section .comments .comment-card .comment-time {
   font-weight: bold;
   font-size: 12px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .comment-page .title {
   font-size: 24px;
   font-weight: bold;
   margin: 20px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 .comment-page .post {
-  background-color: #280234;
+  background-color: #2e2e2e;
   margin: 20px;
   color: #ffffff;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   padding: 10px;
 }
 
@@ -1056,11 +1053,11 @@ body {
 }
 
 .show-add-box #show-add {
-  background-color: #280234;
+  background-color: #2e2e2e;
   width: 200px;
-  color: #8c799e;
+  color: #9f9f9f;
   padding: 10px;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   border-radius: 10px;
   margin-bottom: 20px;
   -webkit-transition: .2s ease;
@@ -1078,23 +1075,23 @@ body {
 
 .show-add-box #show-add:hover {
   cursor: pointer;
-  background-color: #8c799e;
-  color: #280234;
-  border: 2px solid #280234;
+  background-color: #9f9f9f;
+  color: #2e2e2e;
+  border: 2px solid #2e2e2e;
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 
 #summary-box {
-  background-color: #280234;
+  background-color: #2e2e2e;
   padding: 10px;
-  border: 2px solid #280234;
+  border: 2px solid #2e2e2e;
 }
 
 #summary-box .summary-title {
   font-size: 20px;
   font-weight: bold;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 #summary-box .summary-text-box .summary-text {
@@ -1104,27 +1101,27 @@ body {
 
 #summary-box .summary-text-box .character-count {
   font-size: 12px;
-  color: #8c799e;
+  color: #9f9f9f;
 }
 
 #summary-box .summary-text-box .add-summary-button {
-  background-color: #8c799e;
-  color: #280234;
+  background-color: #9f9f9f;
+  color: #2e2e2e;
   font-weight: bold;
   border: none;
   padding: 8px;
   border-radius: 10px;
   margin: 10px 0px;
-  border: 2px solid #8c799e;
+  border: 2px solid #9f9f9f;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
 #summary-box .summary-text-box .add-summary-button:hover {
   cursor: pointer;
-  background-color: #280234;
-  color: #8c799e;
-  border: 2px solid #8c799e;
+  background-color: #2e2e2e;
+  color: #9f9f9f;
+  border: 2px solid #9f9f9f;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
@@ -1134,7 +1131,7 @@ body {
 }
 
 #summary-box .not-logged-in a {
-  color: #8c799e;
+  color: #9f9f9f;
   text-decoration: none;
 }
 
@@ -1156,9 +1153,8 @@ body {
   height: 100%;
   width: 100%;
   font-size: 24px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#141415), to(#22173d));
-  background-image: linear-gradient(to bottom right, #141415, #22173d);
-  color: #8c799e;
+  background-image: #101010;
+  color: #9f9f9f;
   font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,46 +1,13 @@
-$navbar: #180e2f;
-$outline: #8c799e;
-$backgroundMain: #280234;
+$navbar: #161616;
+$outline: #9f9f9f;
+$backgroundMain: #2e2e2e;
 $titleColor: #050404;
 $textColor: #ffffff;
 $loginSignup: #222222;
 $hoverColor: #121212;
-$backgroundGradient: linear-gradient(to bottom right, rgb(20, 20, 21), rgb(34, 23, 61));
-$navbarGradient: linear-gradient(to bottom, rgb(25, 25, 29), rgb(34, 23, 61));
-$pictureGradient: linear-gradient(to bottom right, rgb(25, 25, 29), rgb(34, 23, 61));
-
-// $navbar: #1a1a1b;
-// $outline: #d2d2d2;
-// $backgroundMain: #6c6c6c;
-// $titleColor: #050404;
-// $textColor: #ffffff;
-// $loginSignup: #828282;
-// $hoverColor: #8b8b8b;
-// $backgroundGradient: linear-gradient(to bottom right, rgb(10, 10, 10), rgb(61, 61, 61));
-// $navbarGradient: linear-gradient(to bottom, rgb(10, 10, 10), rgb(61, 61, 61));
-// $pictureGradient: linear-gradient(to bottom, rgb(10, 10, 10), rgb(61, 61, 61));
-
-// $navbar: #4f0909;
-// $outline: #ff8f8f;
-// $backgroundMain: #850303;
-// $titleColor: #050404;
-// $textColor: #ffffff;
-// $loginSignup: #3e0101;
-// $hoverColor: #300000;
-// $backgroundGradient: linear-gradient(to bottom right, rgb(19, 0, 0), rgb(41, 0, 0));
-// $navbarGradient: linear-gradient(to bottom, rgb(19, 0, 0), rgb(41, 0, 0));
-// $pictureGradient: linear-gradient(to bottom, rgb(35, 1, 1), rgb(41, 0, 0));
-
-// $navbar: #004247;
-// $outline: #009aae;
-// $backgroundMain: #004241;
-// $titleColor: #050404;
-// $textColor: #ffffff;
-// $loginSignup: #0c262a;
-// $hoverColor: #091c20;
-// $backgroundGradient: linear-gradient(to bottom right, rgb(0, 33, 42), rgb(0, 56, 83));
-// $navbarGradient: linear-gradient(to bottom, rgb(0, 33, 42), rgb(0, 56, 83));
-// $pictureGradient: linear-gradient(to bottom, rgb(0, 33, 42), rgb(0, 56, 83));
+$backgroundGradient: rgb(16, 16, 16);
+$navbarGradient: linear-gradient(to bottom, rgb(28, 28, 28), rgb(44, 44, 44));
+$pictureGradient: rgb(38, 38, 38);
 
 @import "./homepage";
 @import "./login";
