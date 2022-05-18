@@ -169,7 +169,6 @@ function Homepage() {
                   src={iceHockeyLogo}
                   alt="Ice Hockey Logo"
                   className="logo"
-                  id="icehockey-logo"
                 ></img>
               </Link>
             </div>

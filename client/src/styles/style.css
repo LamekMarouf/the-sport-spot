@@ -173,7 +173,7 @@
 }
 
 .homepage #icehockey-logo {
-  margin-left: 100px;
+  margin-left: 0px;
 }
 
 .login-page {
@@ -947,6 +947,14 @@ body {
   cursor: pointer;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+}
+
+.comments .not-logged-in {
+  color: #ffffff;
+}
+
+.comments .not-logged-in a {
+  color: #8c799e;
 }
 
 .no-comments {
