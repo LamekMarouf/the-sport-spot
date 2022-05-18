@@ -10,7 +10,7 @@ import esportsLogo from "../assets/images/esports-logo.jpg";
 import soccerLogo from "../assets/images/soccer-logo.png";
 import chessLogo from "../assets/images/chess-logo.jpg";
 import olympicsLogo from "../assets/images/olympics-logo.png";
-import iceHockeyLogo from "../assets/images/ice-hockey-logo.png";
+import iceHockeyLogo from "../assets/images/nhl-logo.png";
 
 function Homepage() {
   const [loading, setLoading] = useState(false);
@@ -158,11 +158,11 @@ function Homepage() {
               <div></div>
               <Link to="/notfound">
                 <div className="picture-text">
-                  <div className="text">Ice Hockey</div>
+                  <div className="text">NHL</div>
                   <div id="caption">
-                    Ice hockey is a contact winter team sport played on ice
-                    skates, usually on an ice skating rink with lines and
-                    markings specific to the sport.{" "}
+                    NHL is a contact winter team sport played on ice skates,
+                    usually on an ice skating rink with lines and markings
+                    specific to the sport.{" "}
                   </div>
                 </div>
                 <img
