@@ -7,5 +7,5 @@ Have you ever wanted to see results, reviews and summaries for a sport so you ge
 
 ## Deployed Application
 
-License
+## License
 ©2022 Lamek Marouf
