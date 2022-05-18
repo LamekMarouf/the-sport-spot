@@ -24,12 +24,14 @@
         padding: 20px 100px;
         margin: 20px 20px;
         a {
-          @include flexCenter();
-          justify-content: space-between;
           background-image: $pictureGradient;
           padding: 30px;
           width: 1000px;
           border: 5px solid $outline;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          justify-content: center;
           
           &:hover {
               color: $textColor;
@@ -63,24 +65,26 @@
         padding: 70px 100px;
         margin: 20px 20px;
         a {
-          @include flexCenter();
-          justify-content: space-between;
-          padding: 30px;
-          width: 1000px;
-          background-image: $pictureGradient;
-          border: 5px solid $outline;
-          &:hover {
-              color: $textColor;
-              .picture-text {
-                  .text {
-                      text-decoration: underline;
-                  }
-                  #caption {
-                      display: block;
-                      text-decoration: none;
-                  }
-              }
-        }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            width: 1000px;  
+            background-image: $pictureGradient;
+            border: 5px solid $outline;
+            &:hover {
+                color: $textColor;
+                .picture-text {
+                    .text {
+                        text-decoration: underline;
+                    }
+                    #caption {
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
         .picture-text {
             width: 450px;
@@ -106,6 +110,12 @@
     }
     #mlb-logo {
         width: max(500px);
+    }
+    #olympics-logo {
+        width: 480px;
+    }
+    #icehockey-logo {
+        margin-left: 100px;
     }
 }
 

@@ -8,6 +8,9 @@ import nbaLogo from "../assets/images/nba-logo.png";
 import nflLogo from "../assets/images/nfl-logo.png";
 import esportsLogo from "../assets/images/esports-logo.jpg";
 import soccerLogo from "../assets/images/soccer-logo.png";
+import chessLogo from "../assets/images/chess-logo.jpg";
+import olympicsLogo from "../assets/images/olympics-logo.png";
+import iceHockeyLogo from "../assets/images/ice-hockey-logo.png";
 
 function Homepage() {
   const [loading, setLoading] = useState(false);
@@ -23,7 +26,12 @@ function Homepage() {
     <>
       {loading ? (
         <div className="loader">
-          <SyncLoader size={10} color={"#8c799e"} loading={loading} speedMultiplier={.6}/>
+          <SyncLoader
+            size={10}
+            color={"#8c799e"}
+            loading={loading}
+            speedMultiplier={0.6}
+          />
         </div>
       ) : (
         <>
@@ -64,7 +72,7 @@ function Homepage() {
               </Link>
             </div>
             <div className="picture-one">
-              <Link to="/footballpage">
+              <Link to="/notfound">
                 <img src={nbaLogo} alt="NBA Logo" className="logo"></img>
                 <div className="picture-text">
                   <div className="text">NBA</div>
@@ -94,7 +102,7 @@ function Homepage() {
               </Link>
             </div>
             <div className="picture-one">
-              <Link to="/footballpage">
+              <Link to="/notfound">
                 <img
                   src={esportsLogo}
                   alt="Esports Logo"
@@ -122,16 +130,17 @@ function Homepage() {
                     intellectual ability as opposed to physical exercise.{" "}
                   </div>
                 </div>
-                <img
-                  src={esportsLogo}
-                  alt="Esports Logo"
-                  className="logo"
-                ></img>
+                <img src={chessLogo} alt="Chess Logo" className="logo"></img>
               </Link>
             </div>{" "}
             <div className="picture-one">
-              <Link to="/footballpage">
-                <img src={nbaLogo} alt="NBA Logo" className="logo"></img>
+              <Link to="/notfound">
+                <img
+                  src={olympicsLogo}
+                  alt="Olympics Logo"
+                  className="logo"
+                  id="olympics-logo"
+                ></img>
                 <div className="picture-text">
                   <div className="text">Olympics</div>
                   <div id="caption">
@@ -157,9 +166,10 @@ function Homepage() {
                   </div>
                 </div>
                 <img
-                  src={esportsLogo}
-                  alt="Esports Logo"
+                  src={iceHockeyLogo}
+                  alt="Ice Hockey Logo"
                   className="logo"
+                  id="icehockey-logo"
                 ></img>
               </Link>
             </div>

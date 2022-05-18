@@ -44,23 +44,21 @@
 }
 
 .homepage .picture-one a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
+  background-image: linear-gradient(to bottom right, #19191d, #22173d);
+  padding: 30px;
+  width: 1000px;
+  border: 5px solid #8c799e;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
-  background-image: linear-gradient(to bottom right, #19191d, #22173d);
-  padding: 30px;
-  width: 1000px;
-  border: 5px solid #8c799e;
 }
 
 .homepage .picture-one a:hover {
@@ -109,18 +107,16 @@
 }
 
 .homepage .picture-two a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 30px;
   width: 1000px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#19191d), to(#22173d));
@@ -170,6 +166,14 @@
 
 .homepage #mlb-logo {
   width: 500px;
+}
+
+.homepage #olympics-logo {
+  width: 480px;
+}
+
+.homepage #icehockey-logo {
+  margin-left: 100px;
 }
 
 .login-page {
