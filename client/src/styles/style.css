@@ -172,10 +172,6 @@
   width: 480px;
 }
 
-.homepage #icehockey-logo {
-  margin-left: 0px;
-}
-
 .login-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,6 +824,35 @@ body {
   cursor: pointer;
 }
 
+#navbar-side ul li .category-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+#navbar-side ul #navbar-categories li .categories-text {
+  font-size: 16px;
+  padding: 3px;
+  height: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .hidden {
   display: none;
 }
@@ -1135,34 +1160,5 @@ body {
   background-image: linear-gradient(to bottom right, #141415, #22173d);
   color: #8c799e;
   font-weight: 600;
-}
-
-.settings-page .title {
-  color: #ffffff;
-  font-size: 36px;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.settings-page .options .theme {
-  font-size: 20px;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

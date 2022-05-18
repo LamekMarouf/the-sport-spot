@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import { BiMenuAltLeft } from "react-icons/bi";
+import { BiMenuAltLeft, BiCategoryAlt } from "react-icons/bi";
 import { RiHome4Line } from "react-icons/ri";
-import { AiFillSetting } from "react-icons/ai";
+import { AiOutlineDown } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import sportSpotLogo from "../../assets/images/sport-spot-logo.png";
 
@@ -16,6 +16,11 @@ const Header = () => {
 
   const displayMenu = () => {
     const navbarSide = document.getElementById("navbar-side");
+    navbarSide.classList.toggle("hidden");
+  };
+
+  const displayCategories = () => {
+    const navbarSide = document.getElementById("navbar-categories");
     navbarSide.classList.toggle("hidden");
   };
 
@@ -49,14 +54,69 @@ const Header = () => {
             </li>
           </Link>
 
-          <Link to="/settings" onClick={displayMenu}>
-            <li>
+            <li onClick={displayCategories}>
               <div className="navbar-icons">
-                <AiFillSetting />
+                <BiCategoryAlt />
               </div>
-              Settings
+              Categories
+              <div className="category-button"><AiOutlineDown /></div>
             </li>
-          </Link>
+
+          <section id="navbar-categories" className="hidden">
+            <Link to="/footballpage" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">Football</div>
+              </li>
+            </Link>
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">MLB</div>
+              </li>
+            </Link>
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">NBA</div>
+              </li>
+            </Link>
+
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">Esports</div>
+              </li>
+            </Link>
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">Mind Sports</div>
+              </li>
+            </Link>
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">Olympics</div>
+              </li>
+            </Link>
+            <Link to="/notfound" onClick={displayMenu}>
+              <li>
+                <div className="navbar-icons">
+                </div>
+                <div className="categories-text">NHL</div>
+              </li>
+            </Link>
+
+
+          </section>
+
 
           {Auth.loggedIn() ? (
             <>
