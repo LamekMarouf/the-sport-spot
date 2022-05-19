@@ -41,7 +41,7 @@ const SingleThought = () => {
         <div className="loader">
           <SyncLoader
             size={10}
-            color={"#8c799e"}
+            color={"#d0d0d0"}
             loading={loading}
             speedMultiplier={0.6}
           />
