@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 
 import ThoughtList from "../components/ThoughtList";
 import ThoughtForm from "../components/ThoughtForm";
-
 import { QUERY_THOUGHTS } from "../utils/queries";
 
 const CardPage = () => {
